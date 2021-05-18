@@ -1,0 +1,422 @@
+html{
+    font-size:62.5%;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    border-radius: 1.10rem;
+    background-color:white;
+}
+.nav-item.active.nav-link{
+    border-bottom:1px solid #1ceeee;
+}
+.nav-link {
+    font-size: 2rem;
+    color: white;
+
+}
+
+.nav-item {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(3,43,53);
+    transition: .5s;
+    border-radius: 1rem;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#1ceeee;  
+    background-color: rgb(3, 43, 53);
+}
+/* mobile-view styling  */
+@media (max-width:991px){
+    .bg{ 
+        /* padding-top:75px; */
+        padding:13rem 0;
+        background-color: rgb(3, 43, 53);
+     }
+    .head {
+        font-size: 2.5rem;
+        color: white;
+        margin: 1.5rem 0;
+    }
+    .tagline {
+       
+        color: rgb(199, 199, 199);
+        margin: 1.5rem 0;
+    }
+    
+    .highlight {
+        color: #1ceeee!important;
+    }
+    
+    .btn-signup {
+        background-color: #1ceeee;
+        border-radius: 0.75rem;
+        font-weight: bold;
+        color: rgb(3, 43, 53);
+        font-size: 1.35rem;
+        margin: 0 10rem;
+    }
+    
+    #head-page-2{
+        font-size:3rem;
+        color:#263238;
+    }
+    #page-2-content{
+        font-size: 1.5rem;
+        color: #263238;
+    }
+    #sec-2{
+        background-color: rgb(3, 43, 53);
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    
+    #sec-2-bg{
+        background: rgb(255,255,255);
+        padding: 4rem 0;
+    }
+    #girlImage-Div{
+        padding-top: 7rem;
+        padding-left: 4rem;
+    }
+    #circle{
+        position: absolute;
+        width: 4rem;
+        height: 4rem; 
+        top: 2rem;
+        right: 1.5rem;
+    }
+    /* features page styling */
+    #sec-3{
+        background-image:url(/assets/bg/Empty\ street-pana\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size:100vw 100vh;
+        background-color: white;
+    }
+
+    .pg-3-head{
+        color:#455a64;
+        font-size: 3rem;
+    }
+    .subHead-page-3{
+        font-weight: 400;
+        color: #455a64;
+        font-size:1.9rem;
+    }
+    .page-3-content{
+        font-size: 1.5rem;
+        color:#455a64;
+    }
+
+    /* here starts sec-4 styling */
+    #whyUs{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(98,201,213,0.4906337535014006) 100%);
+    }
+    .head-text-col{
+        height: 17rem;
+    }
+    #head-whyUs{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 3rem;
+    padding: 1rem 0rem;
+    }
+    #content-whyUs{
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 13rem;
+    margin: 0 3rem;
+    }
+    .minnions-col{
+        height: 20rem;
+        margin: 2rem 0rem;
+    }
+/* early access styling from here */
+#label-id{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(3,43,53);
+    }
+
+.btn-early{
+    background-color: #1ceeee;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    color: rgb(3, 43, 53);
+
+}
+    /*here starts sec-6 styling  */
+    
+    #sec-6-head{
+        color: rgb(3,43,53);
+        font-size: 2.7rem;
+        font-weight: 700;
+        margin: 1rem 12rem;
+    }
+    .team-img-col{
+        background-color: white;
+        border-radius: 1.5rem;
+        height: 17rem;
+        width: 14rem;
+        padding: 1rem 0rem;
+        margin: 1.5rem 10rem;
+    }
+    .btn-team{
+        background-color: rgb(3,43,53);
+        transform: translate(1rem, 14rem);
+        width: 12rem;
+        font-weight: 500;
+
+    }
+       /*here starts contact us styling */
+       #contactUs{
+        background-color: rgb(3, 43, 53);
+    }
+   #contactUs-head{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 0;  
+    }
+    .contactUs-col{
+       
+        padding: 1rem 5rem;
+        height: 12rem;
+    }
+
+   .conDetails{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+   }
+  /* footer styling from here */
+  footer{
+      border-top: 1px solid #62c9d5;
+      background-color: rgb(3, 43, 53);
+  }
+  .btn-footer
+  {
+    background-color: #62c9d5;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    color: rgb(3, 43, 53);
+    font-size: 1.3rem;
+    margin:2rem 0;
+    max-height: 3rem;
+    } 
+}
+
+
+
+
+
+
+@media (min-width:992px) {
+    .head{
+        font-size: 4.5rem;
+        color: white;
+    }
+    .bg{
+        padding:20rem 0;
+        background-color: rgb(3, 43, 53);
+    }
+    .tagline {
+       
+        color: rgb(199, 199, 199);
+        margin: 1.5rem 0;
+    }
+    
+    .highlight {
+        color: #1ceeee!important;
+    }
+    
+    .btn-signup {
+        background-color: #1ceeee;
+        border-radius: 0.75rem;
+        font-weight: bold;
+        color: rgb(3, 43, 53);
+        font-size: 1.35rem;
+        margin: 0 0rem;
+    }
+    /* here starts sec-2 styling */
+    #head-page-2{
+        font-size:4rem;
+        color:#263238;
+    }
+    #page-2-content{
+        font-size: 1.8rem;
+        color: #263238;
+    }
+    #sec-2{
+        background-color: rgb(3, 43, 53);
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+    
+    #sec-2-bg{
+        background: rgb(255,255,255);
+        padding: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, transparent 50%, transparent 100%);
+    }
+    .container.about{
+        background-color: white;
+        border-radius: 6rem;
+        padding: 6rem 0;
+    }
+    #girlImage-Div{
+        padding-left: 5rem;
+    }
+    #circle{
+        position: absolute;
+        width: 5rem;
+        height: 5rem; 
+        top: 8rem;
+        right: 9rem;
+    }
+    /* here starts sec-3 styling */
+    #sec-3{
+        background-image: url(/assets/bg/Empty\ street-pana\ -desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+    }
+    
+    .pg-3-head{
+        color:#455a64;
+        font-size: 4rem;
+    }
+    .subHead-page-3{
+        font-size: 3rem;
+        font-weight: 500;
+        color: #455a64;
+    }
+    .page-3-content{
+        font-size: 2rem;
+        color:#455a64;
+    }
+    /* here starts section 4 styling */
+    #whyUs{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(98,201,213,0.4906337535014006) 100%);
+    }
+    #head-whyUs{
+        font-size: 4rem;
+        font-weight: bolder;
+        padding: 3rem 0;
+        color:#022B35;
+    }
+    #content-whyUs{
+        font-size:2rem;
+        font-weight: 500;
+        color: #022B35;
+    }
+    .minnions-col{
+        margin: 0 37rem;
+        height: 41rem;
+    }
+      /* early access */
+
+      #label-id
+      {
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgb(3,43,53);
+      }
+      #email{
+      padding: .5rem 2rem;
+      font-size: 1.5rem;
+     }
+     .btn-early{
+      background-color: #1ceeee;
+      border-radius: 0.75rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgb(3, 43, 53);
+      margin: 0rem;
+      }
+        /* here starts section-6 styling */
+        .sec-6-row{
+            height: 61rem;
+        }
+        #sec-6-head{
+            color: rgb(3,43,53);
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin: 0rem 9rem;
+            padding-top: 3rem;
+        
+        }
+        .team-img-col{
+            background-color: white;
+            border-radius: 1.5rem;
+            height: 24rem;
+            width: 19rem;
+            padding: 1rem 0rem;
+            margin: 4rem 1rem;
+            margin-left: 10rem
+        }
+        .btn-team{
+            background-color: rgb(3,43,53);
+            transform: translate(1rem, 21rem);
+            width: 17rem;
+            font-weight: 600;
+            font-size: 1.6rem;
+    
+        }
+     /*here starts contact us styling */
+    #contactUs{
+        background-color: rgb(3, 43, 53);
+       }
+    #contactUs-head{
+               color: white;
+               font-size: 4rem;
+               font-weight: 700;
+               margin: 0rem 12rem;
+               padding-top: 2rem;
+       }
+    .contactUs-col{
+            margin-left: 6rem;
+           }
+    .contactUs-img-col{
+                   margin: 4rem 0rem;
+               }
+           
+    .conDetails{
+                  color:white;
+                   font-size: 2.5rem;
+                   font-weight: 500;
+           
+              }
+     /* footer styling from here */
+  footer{
+    border-top: 2px solid #62c9d5;
+    background-color: rgb(3, 43, 53);
+    }
+.btn-footer
+ {
+  background-color: #62c9d5;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  color: rgb(3, 43, 53);
+  font-size: 2rem;
+  margin: 2.8rem 4.5rem;
+  }  
+
+}
+
+
+
+
+
+
+
+
+
+

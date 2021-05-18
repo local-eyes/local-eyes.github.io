@@ -1,0 +1,204 @@
+html{
+    font-size:62.5%;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    border-radius: 1.10rem;
+    background-color:white;
+    box-shadow: 2px 7px 35px rgba(17, 17, 17, 0.5), -2px -7px 35px rgba(17, 17, 17, 0.5);
+}
+.nav-item.active.nav-link{
+    border-bottom:1px solid #1ceeee;
+}
+.nav-link {
+    font-size: 2rem;
+    color: white;
+
+}
+
+.nav-item {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(3,43,53);
+    transition: .5s;
+    border-radius: 1rem;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#1ceeee;  
+    background-color: rgb(3, 43, 53);
+}
+/* page styling from here */
+@media(max-width:991px){
+
+
+    .pg-3-head{
+        color:white;
+        font-size: 3rem;
+    }
+    .subHead-page-3{
+        font-weight: 400;
+        color: white;
+        font-size:1.9rem;
+    }
+    .page-3-content{
+        font-size: 1.5rem;
+        color: white
+    }
+    .feature-container{
+        background-color: rgb(3, 43, 53);
+        border-radius: 3rem;
+        max-width: 93%;   
+        margin-top: 35%;
+        background-image: url(/assets/bg/features-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .feature-circle{
+        max-width: 16%;
+        margin-bottom: 5%;
+    }
+/* early access styling from here */
+#label-id{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(3,43,53);
+    }
+
+.btn-early{
+    background-color: #1ceeee;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    color: rgb(3, 43, 53);
+
+}
+       /*here starts contact us styling */
+       #contactUs{
+        background-color: rgb(3, 43, 53);
+    }
+   #contactUs-head{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 0;  
+    }
+    .contactUs-col{
+       
+        padding: 1rem 5rem;
+        height: 12rem;
+    }
+
+   .conDetails{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+   }
+    /* footer styling  */
+    footer{
+        border-top: 1px solid #62c9d5;
+        background-color: rgb(3, 43, 53);
+    }
+    .btn-footer
+    {
+      background-color: #62c9d5;
+      border-radius: 0.75rem;
+      font-weight: bold;
+      color: rgb(3, 43, 53);
+      font-size: 1.3rem;
+      margin:2rem 0;
+      max-height: 3rem;
+      } 
+
+}
+
+@media (min-width:992px){
+    .feature-container{
+        background-color: rgb(3, 43, 53);
+        border-radius: 3rem;
+        margin-top: 12%;
+        background-image: url(/assets/bg/features-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .feature-circle{
+        max-width: 6%;
+    }
+    .pg-3-head{
+        color:white;
+        font-size: 4rem;
+    }
+    .subHead-page-3{
+        font-size: 3rem;
+        font-weight: 500;
+        color: white;
+    }
+    .page-3-content{
+        font-size: 2rem;
+        color: white;
+    }
+
+ /* early access styling from here */
+ #label-id
+ {
+ font-size: 3rem;
+ font-weight: 700;
+ color: rgb(3,43,53);
+ }
+ #email{
+ padding: .5rem 2rem;
+ font-size: 1.5rem;
+}
+.btn-early{
+ background-color: #1ceeee;
+ border-radius: 0.75rem;
+ font-weight: bold;
+ font-size: 1.5rem;
+ color: rgb(3, 43, 53);
+ margin: 0rem;
+ }
+    /*here starts contact us styling */
+    #contactUs{
+        background-color: rgb(3, 43, 53);
+       }
+       #contactUs-head{
+               color: white;
+               font-size: 4rem;
+               font-weight: 700;
+               margin: 0rem 12rem;
+               padding-top: 2rem;
+       }
+       .contactUs-col{
+            margin-left: 6rem;
+           }
+               .contactUs-img-col{
+                   margin: 4rem 0rem;
+               }
+           
+              .conDetails{
+                  color:white;
+                   font-size: 2.5rem;
+                   font-weight: 500;
+           
+              }
+        /*footer styling  */
+        footer{
+            border-top: 2px solid #62c9d5;
+            background-color: rgb(3, 43, 53);
+            }
+        .btn-footer
+         {
+          background-color: #62c9d5;
+          border-radius: 0.75rem;
+          font-weight: bold;
+          color: rgb(3, 43, 53);
+          font-size: 2rem;
+          margin: 2.8rem 4.5rem;
+          }  
+
+          
+}
