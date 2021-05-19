@@ -8,13 +8,12 @@
     <title>Local Eyes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- <link rel="stylesheet" href="./styles/FAQ.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body>
-    <div class="container fixed-top pt-5 px-5">
+    <div class="container fixed-top pt-5 px-5" data-aos="slide-down" data-aos-duration="700" data-aos-delay="300">
         <nav class="navbar navbar-light  navbar-expand-lg px-5">
 
             <a href="/" class=" navbar-brand">
@@ -50,8 +49,8 @@
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 col-lg-6 order-sm-1 order-2 ">
                     <div class="header-text">
-                        <h1 class="head  fw-normal  px-2 ">A Platform to know <span class="highlight  fw-normal ">your place</span></h1>
-                        <h2 class="tagline fs-2 fw-normal  px-2">Ask Questions and Get Answers about your locality from the people of your locality.</h2>
+                        <h1 class="head  fw-normal  px-2" style="font-weight: bold!important;">A Platform to know <span class="highlight  fw-normal " style="font-weight: bold!important;">your place</span></h1>
+                        <h2 class="tagline fs-2 fw-normal  px-2">What if you can ask anything to your neighborhood ANYTIME?</h2>
                         <div class="form-inline mt-4 px-2">
                             <input type="email" class="form-control me-3" style="border-radius: 0.75rem; font-size: 1.25rem;" placeholder="email@example.com">
                             <button type="submit" class="btn btn-signup mt-3">Early Access</button>
@@ -70,10 +69,10 @@
             <div class="container about">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6  col-lg-6 order-sm-1 order-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
-                        <div>
-                            <h1 class="fw-bold  ps-3" id="head-page-2">About us</h1>
-                            <p class="fw-normal  px-3" id="page-2-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                a type specimen book. It has survived not only five centu
+                        <div class="meetLocalEyes">
+                            <h1 class="fw-bold  ps-3" id="head-page-2" style="font-size: 75px!important; margin-bottom: 20px;">Meet Local<span class="highlight">Eyes.</span></h1>
+                            <p class="fw-normal  px-3" id="page-2-content" style="font-size: 25px;">
+                                A Social Platform that connects People with Locals, to<br><strong>Gather Information, Share knowledge, Explore Neighborhood </strong><br>through an interactive Ask-and-Answer Interface.
                             </p>
                         </div>
                     </div>
@@ -84,9 +83,6 @@
                 </div>
             </div>
         </div>
-        <div>
-            <img src="./assets/Ellipse 23.png" alt="ring" id="circle">
-        </div>
     </section>
 
     <section id="sec-3">
@@ -95,15 +91,29 @@
                 <h1 class="text-center pg-3-head fw-bold py-5">Features</h1>
             </div>
 
+            <div class="row align-items-center justify-content-center justify-content-md-between">
+                <div class="col-5 col-md-4 feature-img-col p-5 mx-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="./assets/questionGirl.svg" alt="quesGirl" class="img-fluid feature">
+                </div>
+                <div class="col-10 col-md-6 text-center p-5 py-lg-0 feature-text-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                    <div>
+                        <h2 class="subHead-page-3">Understand Your Locality</h2>
+                        <p class="page-3-content">
+                            A platform to ask and answer about everything related to your neighborhood, and get Real, Locally Verified & Popular suggestions about things that only a localite can tell.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row align-items-center justify-content-center justify-content-md-between">
                     <div class="col-5 col-md-4 order-md-last feature-img-col p-5 mx-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                         <img src="./assets/locationGirl.svg" alt="locationGirl" class="img-fluid feature">
                     </div>
-                    <div class="col-10 col-md-4  order-md-first feature-text-col p-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="col-10 col-md-6  order-md-first feature-text-col p-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
                         <div class="text-center">
-                            <h2 class="subHead-page-3 ">Local Location Info</h2>
-                            <p class="page-3-content text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae officiis laborum nesciunt impedit hic a culpa ducimus quaerat ve</p>
+                            <h2 class="subHead-page-3 ">Locally Curated Feed</h2>
+                            <p class="page-3-content text-center ">See what's happening around you through a location based feed of questions, posts and photos, and get to know what poeple are sharing near you.</p>
                         </div>
                     </div>
                 </div>
@@ -115,8 +125,10 @@
                 </div>
                 <div class="col-10 col-md-6 text-center p-5 py-lg-0 feature-text-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                     <div>
-                        <h2 class="subHead-page-3 ">Q&A Platform</h2>
-                        <p class="page-3-content ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae officiis laborum nesciunt impedit hic a culpa ducimus quaerat ve</p>
+                        <h2 class="subHead-page-3">Explore Other Neighborhoods</h2>
+                        <p class="page-3-content">
+                            See what's trending in other neighborhoods, and get to know the true insights of that locality through the eyes of locals.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -126,7 +138,7 @@
     <section id="whyUs">
         <div class="row">
             <div class="col-12">
-                <img src="./assets/whyUs-header.png" alt="whyUs-head-image" class="img-fluid" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <img src="./assets/whyUs-header.png" alt="whyUs-head-image" class="img-fluid">
             </div>
         </div>
         <div class="container position-relative">
@@ -153,7 +165,7 @@
                 <div class="col-10 col-md-6  earlyAccess-text-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                     <div>
                         <div class="form-inline mt-4 p-md-3">
-                            <label id="label-id" for="email">For Early Access Please Drop Your Email Here </label>
+                            <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
                             <input id="email" type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
                             <div class=" d-flex justify-content-center justify-content-md-start">
                                 <button type="submit" class="btn btn-early m-4">Early Access</button>
