@@ -52,10 +52,13 @@ body {
         font-size: 2.5rem;
         color: black;
         margin: 1.5rem 0;
+        font-weight: bold!important;
+        font-size: 50px;
     }
     .tagline {
         color: rgb(92, 92, 92);
         margin: 1.5rem 0;
+        font-size: 20px!important;
     }
     .highlight {
         color: #62c9d5!important;
@@ -213,9 +216,11 @@ body {
     .head {
         font-size: 4.5rem;
         color: black;
+        font-weight: bold!important;
+        font-size: 50px;
     }
     .bg {
-        padding: 20rem 0;
+        padding: 15rem 0;
         background-color: white;
     }
     .tagline {
