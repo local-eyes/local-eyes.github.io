@@ -67,7 +67,7 @@ body {
         top: 2rem;
         right: 1.5rem;
     }
-    /* features page styling */
+    /* features page styling mobile*/
     #sec-3 {
         background-image: url(/assets/bg/Empty\ street-pana\ \(1\).png);
         background-repeat: no-repeat;
@@ -87,6 +87,16 @@ body {
     .page-3-content {
         font-size: 1.5rem;
         color: #455a64;
+    }
+    .btn-explore{
+        background-color:rgb(3, 43, 53);
+        border-radius: 0.75rem;
+        font-weight:400;
+        color:white;
+    }
+    .btn-explore:hover{
+        color: white;
+        letter-spacing:1px;
     }
     /* here starts sec-4 styling */
     #whyUs {
@@ -125,7 +135,7 @@ body {
         color: rgb(3, 43, 53);
     }
     /*here starts sec-6 styling  */
-    #sec-6-head {
+    /* #sec-6-head {
         color: rgb(3, 43, 53);
         font-size: 2.7rem;
         font-weight: 700;
@@ -144,7 +154,7 @@ body {
         transform: translate(1rem, 14rem);
         width: 12rem;
         font-weight: 500;
-    }
+    } */
     /*here starts contact us styling */
     #contactUs {
         background-color: rgb(3, 43, 53);
@@ -264,6 +274,18 @@ body {
         font-size: 2rem;
         color: #455a64;
     }
+    .btn-explore{
+        background-color:rgb(3, 43, 53);
+        border-radius: 0.75rem;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color:white;
+        transition: .5s;
+        }
+        .btn-explore:hover{
+            color: white;
+            letter-spacing:1px;
+        }
     /* here starts section 4 styling */
     #whyUs {
         background: rgb(255, 255, 255);
@@ -303,7 +325,7 @@ body {
         margin: 0rem;
     }
     /* here starts section-6 styling */
-    .sec-6-row {
+    /* .sec-6-row {
         height: 61rem;
     }
     #sec-6-head {
@@ -328,7 +350,7 @@ body {
         width: 17rem;
         font-weight: 600;
         font-size: 1.6rem;
-    }
+    } */
     /*here starts contact us styling */
     #contactUs {
         background-color: rgb(3, 43, 53);
