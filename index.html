@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <script src="./assets/js/app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -49,48 +50,48 @@
             </div>
         </nav>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div>
-                <div class="form-inline mt-4 p-md-3">
-                    <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
-                    <input id="email" type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
-                    <div class=" d-flex justify-content-center justify-content-md-start">
-                        <button type="submit" class="btn btn-early m-4">Early Access</button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="form-inline mt-4 p-md-3">
+                            <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
+                            <input id="email" type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
+                            <div class=" d-flex justify-content-center justify-content-md-start">
+                                <button type="submit" class="btn btn-early m-4">Early Access</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
 
     <section class="bg" id="cover">
-       <div class="container pt-5 mt-lg-5" id="container-cover">
-        <div class="row align-items-center">
-         <div class="col-12 col-md-6 col-lg-6 order-sm-1 order-2 ">
-        <div class="header-text">
-          <h1 class="head fw-normal  px-2">Your Neighbourhood is more than just the <span class="highlight">Places</span> Near You.</h1>
-          <h2 class="tagline fs-2 fw-normal  px-2">Dive into your locality with <b>Local<span class="highlight">Eyes</b></span> and see what more your neighbourhood has for you to offer.</h2>
-            <div class="form-inline mt-4 px-2">
-            <form>
-             <input type="email" class="form-control me-3" style="border-radius: 0.75rem; font-size: 1.25rem;" placeholder="email@example.com">
-                <button type="submit" class="btn btn-signup mt-3">Early Access</button>
-            </form>
-            </div>
-        </div>
-            </div>
+        <div class="container pt-5 mt-lg-5" id="container-cover">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-6 order-sm-1 order-2 ">
+                    <div class="header-text">
+                        <h1 class="head fw-normal  px-2">Your Neighbourhood is more than just the <span class="highlight words" id="rotation"></span> <br>Near You.</h1>
+                        <h2 class="tagline fs-2 fw-normal  px-2">Dive into your locality with <b>Local<span class="highlight">Eyes</b></span> and see what more your neighbourhood has for you to offer.</h2>
+                        <div class="form-inline mt-4 px-2">
+                            <form>
+                                <input type="email" class="form-control me-3" style="border-radius: 0.75rem; font-size: 1.25rem;" placeholder="email@example.com">
+                                <button type="submit" class="btn btn-signup mt-3">Early Access</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-12  col-md-6 col-lg-6 order-sm-2 order-1" id="container-locality" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                     <img src="./assets/coverHouse.png" alt="loacality" class="img-fluid" id="locality">
                 </div>
@@ -183,7 +184,7 @@
                     <div>
                         <div class="form-inline mt-4 p-md-3">
                             <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
-                            <input id="email" type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
+                            <input type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
                             <div class=" d-flex justify-content-center justify-content-md-start">
                                 <button type="submit" class="btn btn-early m-4">Early Access</button>
                             </div>
