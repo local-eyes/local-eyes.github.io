@@ -1,0 +1,32 @@
+.navbar {
+    border-radius: 1.10rem;
+    background-color: white;
+    box-shadow: 3px 6px 24px rgb(0 0 0 / 10%);
+}
+
+.nav-item.active.nav-link {
+    border-bottom: 1px solid #62c9d5;
+}
+
+.nav-link {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-item {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(3, 43, 53);
+    transition: .5s;
+    /* border-radius: 1rem; */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.active {
+    color: #62c9d5;
+    border-bottom: 3px solid #62c9d5;
+    /* background-color: rgb(3, 43, 53); */
+}

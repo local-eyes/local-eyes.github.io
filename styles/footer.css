@@ -138,12 +138,12 @@ ul {
 .subscribe-form {
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 45px rgba(0, 211, 219, 0.4);
 }
 
 .subscribe-form input {
     width: 100%;
     padding: 14px 28px;
-    /* background: #2E2E2E; */
     border: 1px solid #2E2E2E;
     color: #fff;
 }
