@@ -103,24 +103,16 @@ body {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
-    .head-text-col {
-        height: 17rem;
+    .whyUsHead{
+        color: #455a64;
+        font-size: 3rem;
     }
-    #head-whyUs {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-left: 3rem;
-        padding: 1rem 0rem;
+    .list-group{
+        flex-direction: row;
     }
-    #content-whyUs {
-        font-size: 1.5rem;
-        width: 25rem;
-        height: 13rem;
-        margin: 0 3rem;
-    }
-    .minnions-col {
-        height: 20rem;
-        margin: 2rem 0rem;
+    .list-group-item.list-group-item-action{
+        background-color: #62c9d5;
+        color: #455a64;
     }
     /* early access styling from here */
     #label-id {
@@ -246,13 +238,7 @@ body {
     #girlImage-Div {
         padding-left: 5rem;
     }
-    #circle {
-        position: absolute;
-        width: 5rem;
-        height: 5rem;
-        top: 8rem;
-        right: 9rem;
-    }
+
     /* here starts sec-3 styling */
     #sec-3 {
         background-image: url(/assets/bg/Empty\ street-pana\ -desktop.png);
@@ -291,20 +277,16 @@ body {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
-    #head-whyUs {
-        font-size: 4rem;
-        font-weight: bolder;
-        padding: 3rem 0;
-        color: #022B35;
+    .whyUsHead{
+        color: #455a64;
+        font-size: 3rem;
     }
-    #content-whyUs {
-        font-size: 2rem;
-        font-weight: 500;
-        color: #022B35;
+    .list-group.list-group-item{
+        color:#455a64;
     }
-    .minnions-col {
-        margin: 0 37rem;
-        height: 41rem;
+    .list-group{
+        flex-direction: row;
+        color: #62c9d5;
     }
     /* early access */
     #label-id {
