@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,6 +12,24 @@ body {
 }
 
 @media(max-width:991px) {
+    .features-col{
+        border: 2px solid #62c9d5;
+        border-radius: 2rem;
+        height: 46rem;
+    }
+    .features-col-sm{
+        border: 2px solid #62c9d5;
+        border-radius: 2rem;
+        height: 41rem;
+    }
+    .features-col-head{
+        color:#263238;
+        font-size: 3rem;
+    }
+    .features-col-text{
+        color:#263238;
+        font-size: 2rem;
+    }
     .pg-3-head {
         color: white;
         font-size: 3rem;
@@ -24,19 +43,15 @@ body {
         font-size: 1.5rem;
         color: white
     }
-    .feature-container {
-        background-color: rgb(3, 43, 53);
-        border-radius: 3rem;
-        max-width: 93%;
+    #sec-3{
+        background-color:white;  
         margin-top: 35%;
         background-image: url(/assets/bg/features-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
-    .feature-circle {
-        max-width: 16%;
-        margin-bottom: 5%;
-    }
+
     /* early access styling from here */
     #label-id {
         font-size: 1.3rem;
@@ -84,16 +99,31 @@ body {
 }
 
 @media (min-width:992px) {
-    .feature-container {
-        background-color: rgb(3, 43, 53);
-        border-radius: 3rem;
+    #sec-3{
+        background-color:white;   
         margin-top: 12%;
         background-image: url(/assets/bg/features-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
-    .feature-circle {
-        max-width: 6%;
+    .features-col{
+        border: 2px solid #62c9d5;
+        border-radius: 2rem;
+        height: 46rem;
+    }
+    .features-col-sm{
+        border: 2px solid #62c9d5;
+        border-radius: 2rem;
+        height: 42rem;
+    }
+    .features-col-head{
+        color:#263238;
+        font-size: 3rem;
+    }
+    .features-col-text{
+        color:#263238;
+        font-size: 2rem;
     }
     .pg-3-head {
         color: white;
@@ -108,7 +138,7 @@ body {
         font-size: 2rem;
         color: white;
     }
-    /* early access styling from here */
+    /* early access styling from here desktop */
     #label-id {
         font-size: 3rem;
         font-weight: 700;
