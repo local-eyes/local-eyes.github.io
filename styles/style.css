@@ -1,6 +1,5 @@
 html {
     font-size: 62.5%;
-    
 }
 
 body {
@@ -61,7 +60,6 @@ body {
         padding-top: 7rem;
         padding-left: 4rem;
     }
-
     /* features page styling mobile*/
     #sec-3 {
         background-image: url(/assets/bg/Empty\ street-pana\ \(1\).png);
@@ -83,13 +81,13 @@ body {
         font-size: 1.5rem;
         color: #455a64;
     }
-    .btn-explore{
-        background-color:rgb(3, 43, 53);
+    .btn-explore {
+        background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
-        font-weight:400;
-        color:white;
+        font-weight: 400;
+        color: white;
     }
-    .btn-explore:hover{
+    .btn-explore:hover {
         color: white;
         transform: scale(1.3);
     }
@@ -98,14 +96,14 @@ body {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
-    .whyUsHead{
+    .whyUsHead {
         color: #455a64;
         font-size: 3rem;
     }
-    .list-group{
+    .list-group {
         flex-direction: row;
     }
-    .list-group-item.list-group-item-action{
+    .list-group-item.list-group-item-action {
         background-color: #62c9d5;
         color: #455a64;
         font-size: 1.5rem;
@@ -237,7 +235,6 @@ body {
     #girlImage-Div {
         padding-left: 5rem;
     }
-
     /* here starts sec-3 styling desktop*/
     #sec-3 {
         background-image: url(/assets/bg/Empty\ street-pana\ -desktop.png);
@@ -259,41 +256,45 @@ body {
         font-size: 2rem;
         color: #455a64;
     }
-    .btn-explore{
-        background-color:rgb(3, 43, 53);
+    .btn-explore {
+        background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
         font-weight: 500;
         font-size: 2.5rem;
-        color:white;
+        color: white;
         transition: .5s;
-        }
-        .btn-explore:hover{
-            color: white;
-            transform: scale(1.3);
-        }
+    }
+    .btn-explore:hover {
+        color: white;
+        transform: scale(1.3);
+    }
     /* here starts section 4 styling desktop*/
     #whyUs {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
-    .whyUsHead{
+    .whyUsHead {
         color: #455a64;
         font-size: 3rem;
     }
-    .list-group.list-group-item{
-        color:#455a64;
+    .list-group.list-group-item {
+        color: #455a64;
     }
-    .list-group{
+    .list-group {
         flex-direction: row;
         color: #62c9d5;
     }
-    .list-group-item.list-group-item-action{
+    .list-group-item.list-group-item-action {
         background-color: #62c9d5;
         color: #455a64;
         font-size: 2rem;
     }
     .tab-content>.active {
-        height: 62vh;
+        height: 70vh;
+    }
+    .tab-pane:nth-child(3) {
+        margin-top: 70px!important;
+        height: 60vh;
     }
     /* early access desktop*/
     #label-id {
