@@ -19,7 +19,6 @@
 <body>
     <div class="container fixed-top pt-5 px-5" data-aos="slide-down" data-aos-duration="700" data-aos-delay="300">
         <nav class="navbar navbar-light  navbar-expand-lg px-5">
-
             <a href="/" class=" navbar-brand">
                 <img src="./assets/navLogo.png" alt="logo" height="60px">
             </a>
@@ -44,7 +43,7 @@
                         <a href="FAQ.html" class="nav-link"><strong>FAQ</strong></a>
                     </li>
                     <li class="nav-item">
-                        <button type="submit" class="btn btn-signup mt-3" data-bs-toggle="modal" data-bs-target="#navSignUpModal">Sign Up</button>
+                        <button type="submit" class="btn btn-nav-sign mt-3" data-bs-toggle="modal" data-bs-target="#navSignUpModal">Sign Up</button>
                     </li>
                 </ul>
             </div>
@@ -59,15 +58,26 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
         <div class="modal-body">
-            <div>
-             <div class="form-inline mt-4 p-md-3">
-                <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
-                <input id="email" type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
-                <div class=" d-flex justify-content-center justify-content-md-start">
-                <button type="submit" class="btn btn-early m-4">Early Access</button>
+            <section id="sec-5">
+                <div class="container">
+                    <div class="row align-items-center justify-content-md-between justify-content-center">
+                        <div class="col-8 col-md-6  p-3 mt-4 pb-md-5 justify-content-center justify-content-md-end justify-content-lg-end  earlyAccess-img-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                         <img src="./assets/Account-amico.svg" alt="earlyAccess-ing" class="img-fluid earlyAccess-img">
+                        </div>
+                        <div class="col-10 col-md-6  earlyAccess-text-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                        <div>
+                            <div class="form-inline mt-4 p-md-3">
+                             <label id="label-id" for="email"><span class="highlight">Sign Up</span> for Early Access, and experience LocalEyes before the rest </label>
+                               <input type="email" class="form-control me-3 mt-2" style="border-radius: 0.75rem;" placeholder="email@example.com">
+                                <div class=" d-flex justify-content-center justify-content-md-start">
+                                    <button type="submit" class="btn btn-early m-4">Early Access</button>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-            </div>
+            </section>
         </div>
             </div>
         </div>
@@ -122,7 +132,7 @@
                 <h1 class="text-center pg-3-head fw-bold py-5">EarMarkers</h1>
             </div>
 
-            <div class="row align-items-center justify-content-center justify-content-md-between">
+            <div class="row align-items-center justify-content-center justify-content-md-around">
                 <div class="col-5 col-md-4 col-lg-3 feature-img-col p-5 mx-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                     <img src="./assets/questionGirl.svg" alt="quesGirl" class="img-fluid feature">
                 </div>
@@ -137,7 +147,7 @@
             </div>
 
             <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-md-between">
+                <div class="row align-items-center justify-content-center justify-content-md-around">
                     <div class="col-5 col-md-4 col-lg-3 order-md-last feature-img-col p-5 mx-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                         <img src="./assets/locationGirl.svg" alt="locationGirl" class="img-fluid feature">
                     </div>
@@ -152,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="row align-items-center justify-content-center justify-content-md-between">
+            <div class="row align-items-center justify-content-center justify-content-md-around">
                 <div class="col-5 col-md-4 col-lg-3 feature-img-col p-5 mx-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                     <img src="./assets/questionGirl.svg" alt="quesGirl" class="img-fluid feature">
                 </div>
@@ -173,7 +183,7 @@
     <section id="sec-5">
         <div class="container">
             <div class="row align-items-center justify-content-md-between justify-content-center">
-                <div class="col-8 col-md-6 col-lg-4 p-3 mt-4 pb-md-5 justify-content-center justify-content-md-end justify-content-lg-end  earlyAccess-img-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                <div class="col-8 col-md-6 col-lg-4 p-3 mt-4 pb-md-5 justify-content-center justify-content-md-end  earlyAccess-img-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                     <img src="./assets/Account-amico.svg" alt="earlyAccess-ing" class="img-fluid earlyAccess-img">
                 </div>
                 <div class="col-10 col-md-6  earlyAccess-text-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
@@ -197,26 +207,65 @@
         <div class="row">
             <div class="col-12">
               <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active d-flex justify-content-center" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Millennials</a>
-                <a class="list-group-item list-group-item-action d-flex  justify-content-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Gen-Z</a>
+        
+                <a class="list-group-item list-group-item-action d-flex active justify-content-center" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Gen-Z</a>
+                <a class="list-group-item list-group-item-action  d-flex justify-content-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Millennial</a>
                 <a class="list-group-item list-group-item-action d-flex justify-content-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Boomers</a>
               </div>
             </div>
             <div class="col-12">
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, fuga fugiat. Numquam modi laborum debitis exercitationem corrupti, sit aperiam inventore vel nisi. Aperiam explicabo officia, voluptates soluta enim excepturi autem.
+                    <div class="row align-items-center justify-content-center justify-content-md-around">
+                    <div class="col-10 col-md-4 col-lg-6 feature-img-col p-3 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                     <img src="./assets/Group 86-01.svg" alt="Gen-z" class="img-fluid feature">
+                    </div>
+                    <div class="col-10 col-md-5 col-lg-4 text-center p-5 py-lg-0 feature-text-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                       <div>
+                           <h2 class="subHead-page-3"><span class="highlight">Perfect place</span> to ask for help.</h2>
+                            <p class="page-3-content">
+                                Socialize with your neighborhood.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, dignissimos doloribus. Velit dignissimos repudiandae quo unde fugit amet minus eveniet veritatis, ducimus temporibus, dicta nihil magnam blanditiis quod dolores porro.
-
+                    <div class="row align-items-center justify-content-center justify-content-md-around">
+                        <div class="col-10 col-md-4 col-lg-6 feature-img-col p-3 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                         <img src="./assets/Group 164-01.svg" alt="quesGirl" class="img-fluid feature">
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-4 text-center p-5 py-lg-0 feature-text-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                           <div>
+                               <h2 class="subHead-page-3">Understand Your Locality</h2>
+                                <p class="page-3-content">
+                                    Have a nudge to explore and share your
+                                    experiences, LocalEyes is just the
+                                    place for you.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
                 </div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed officia, saepe quibusdam assumenda alias modi rem animi est similique eius omnis sunt voluptate consectetur facere deserunt voluptatum eos cumque!
+                    <div class="row align-items-baseline justify-content-center justify-content-md-around mt-5">
+                        <div class="col-10 col-md-4 col-lg-6 feature-img-col p-3 " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                         <img src="./assets/Group 171-01.svg" alt="quesGirl" class="img-fluid feature">
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-4 text-center p-5 py-lg-0 feature-text-col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                           <div>
+                               <h2 class="subHead-page-3">Understand Your Locality</h2>
+                                <p class="page-3-content">
+                                    You have seen the neighborhood grow in
+                                    front of your eyes, you know the best of it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
 </section>
 
     <!--  SECTION TEAM
