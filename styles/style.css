@@ -111,18 +111,6 @@ body {
     .tab-content>.active {
         height: 70%;
     }
-    /* early access styling from here mobile*/
-    #label-id {
-        font-size: 2.7rem;
-        font-weight: 700;
-        color: rgb(3, 43, 53);
-    }
-    .btn-early {
-        background-color: #62c9d5;
-        border-radius: 0.75rem;
-        font-weight: bold;
-        color: rgb(3, 43, 53);
-    }
     /*here starts sec-6 styling  */
     /* #sec-6-head {
         color: rgb(3, 43, 53);
@@ -295,27 +283,6 @@ body {
     .tab-pane:nth-child(3) {
         margin-top: 70px!important;
         height: 60vh;
-    }
-    .modal-dialog {
-        max-width: 70vw!important;
-    }
-    /* early access desktop*/
-    #label-id {
-        font-size: 3rem;
-        font-weight: 700;
-        color: rgb(3, 43, 53);
-    }
-    #email {
-        padding: .5rem 2rem;
-        font-size: 1.5rem;
-    }
-    .btn-early {
-        background-color: #62c9d5;
-        border-radius: 0.75rem;
-        font-weight: bold;
-        font-size: 1.5rem;
-        color: rgb(3, 43, 53);
-        margin: 0rem;
     }
     /* here starts section-6 styling */
     /* .sec-6-row {

@@ -24,20 +24,24 @@
     /* border-radius: 1rem; */
 }
 
+.modal-dialog {
+    max-width: 70vw!important;
+}
+
 .navbar-light .navbar-nav .nav-link:hover,
 .active {
     color: #62c9d5;
     border-bottom: 3px solid #62c9d5;
     /* background-color: rgb(3, 43, 53); */
 }
+
 .btn-nav-sign {
     background-color: #62c9d5;
     border-radius: 0.40rem;
-    font-weight:600;
+    font-weight: 600;
     color: rgb(3, 43, 53);
     font-size: 1.28rem;
     margin: 0 0rem;
     width: 7rem;
     height: 3.1rem;
-
 }

@@ -208,3 +208,26 @@ ul {
         bottom: 150%;
     }
 }
+
+
+/* early access desktop*/
+
+#label-id {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(3, 43, 53);
+}
+
+#email {
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+}
+
+.btn-early {
+    background-color: #62c9d5;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(3, 43, 53);
+    margin: 0rem;
+}

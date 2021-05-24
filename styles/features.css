@@ -11,23 +11,29 @@ body {
     color: #62c9d5!important;
 }
 
+.features-col,
+.features-col-sm {
+    background-color: white;
+    box-shadow: 3px 16px 44px rgb(0 0 0 / 23%);
+    border-top-right-radius: 4.7rem;
+    border-bottom-left-radius: 4.7rem;
+}
+
 @media(max-width:991px) {
-    .features-col{
+    .features-col {
         border: 2px solid #62c9d5;
-        border-radius: 2rem;
         height: 46rem;
     }
-    .features-col-sm{
+    .features-col-sm {
         border: 2px solid #62c9d5;
-        border-radius: 2rem;
         height: 41rem;
     }
-    .features-col-head{
-        color:#263238;
+    .features-col-head {
+        color: #263238;
         font-size: 3rem;
     }
-    .features-col-text{
-        color:#263238;
+    .features-col-text {
+        color: #263238;
         font-size: 2rem;
     }
     .pg-3-head {
@@ -43,15 +49,14 @@ body {
         font-size: 1.5rem;
         color: white
     }
-    #sec-3{
-        background-color:white;  
+    #sec-3 {
+        background-color: white;
         margin-top: 35%;
         background-image: url(/assets/bg/features-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-
     /* early access styling from here */
     #label-id {
         font-size: 1.3rem;
@@ -99,30 +104,28 @@ body {
 }
 
 @media (min-width:992px) {
-    #sec-3{
-        background-color:white;   
+    #sec-3 {
+        background-color: white;
         margin-top: 12%;
         background-image: url(/assets/bg/features-bg.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-    .features-col{
+    .features-col {
         border: 2px solid #62c9d5;
-        border-radius: 2rem;
         height: 46rem;
     }
-    .features-col-sm{
+    .features-col-sm {
         border: 2px solid #62c9d5;
-        border-radius: 2rem;
         height: 42rem;
     }
-    .features-col-head{
-        color:#263238;
+    .features-col-head {
+        color: #263238;
         font-size: 3rem;
     }
-    .features-col-text{
-        color:#263238;
+    .features-col-text {
+        color: #263238;
         font-size: 2rem;
     }
     .pg-3-head {
