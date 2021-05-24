@@ -296,6 +296,9 @@ body {
         margin-top: 70px!important;
         height: 60vh;
     }
+    .modal-dialog {
+        max-width: 70vw!important;
+    }
     /* early access desktop*/
     #label-id {
         font-size: 3rem;
