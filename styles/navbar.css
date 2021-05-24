@@ -30,11 +30,14 @@
     border-bottom: 3px solid #62c9d5;
     /* background-color: rgb(3, 43, 53); */
 }
-.btn-signup {
+.btn-nav-sign {
     background-color: #62c9d5;
-    border-radius: 0.75rem;
-    font-weight: bold;
+    border-radius: 0.40rem;
+    font-weight:600;
     color: rgb(3, 43, 53);
-    font-size: 1.35rem;
+    font-size: 1.28rem;
     margin: 0 0rem;
+    width: 7rem;
+    height: 3.1rem;
+
 }
