@@ -21,6 +21,7 @@
 .navbar-light .navbar-nav .nav-link {
     color: rgb(3, 43, 53);
     transition: .3s;
+    font-weight: 400;
     /* border-radius: 1rem; */
 }
 

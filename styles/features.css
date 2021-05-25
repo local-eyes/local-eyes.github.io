@@ -5,6 +5,7 @@ html {
 
 body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 .highlight {
@@ -22,11 +23,11 @@ body {
 @media(max-width:991px) {
     .features-col {
         border: 2px solid #62c9d5;
-        height: 46rem;
+        height: 51rem;
     }
     .features-col-sm {
         border: 2px solid #62c9d5;
-        height: 43rem;
+        height: 46rem;
     }
     .features-col-head {
         color: #263238;
@@ -114,11 +115,11 @@ body {
     }
     .features-col {
         border: 2px solid #62c9d5;
-        height: 46rem;
+        height: 57rem;
     }
     .features-col-sm {
         border: 2px solid #62c9d5;
-        height: 42rem;
+        height: 45rem;
     }
     .features-col-head {
         color: #263238;
