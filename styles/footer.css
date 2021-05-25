@@ -145,7 +145,8 @@ ul {
     width: 100%;
     padding: 14px 28px;
     border: 1px solid #2E2E2E;
-    color: #fff;
+    color:#263238;
+    font-size: 1.2rem;
 }
 
 .subscribe-form button {
