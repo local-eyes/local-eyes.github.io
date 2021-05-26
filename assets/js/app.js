@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async() => {
     var placeholder = document.getElementById("rotation");
     // console.log(word.innerText);
-    var wordsArray = ["Places", "Shops", "Parks", "Malls"]
+    var wordsArray = ["Places", "Shops", "Parks", "Malls", "People"]
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
