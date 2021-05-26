@@ -62,7 +62,7 @@ body {
         padding-left: 4rem;
     }
     /* features page styling mobile*/
-    #sec-3 {
+    #features {
         background-image: url(/assets/bg/Empty\ street-pana\ \(1\).png);
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
@@ -144,64 +144,64 @@ body {
         width: 12rem;
         font-weight: 500;
     } */
-        /* FAQ styling mobile */
-        header {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: rgb(3, 43, 53);
-            margin-top: 15rem;
-        }
-        /* accordion styling from here */
-        .accordion-item:first-of-type {
-            border-radius: 1rem;
-            font-size: 1.2rem;
-        }
-        .accordion-item:last-of-type {
-            border-radius: 1rem;
-        }
-        .accordion-item:first-of-type .accordion-button {
-            border-radius: 1rem;
-        }
-        .accordion-item:last-of-type .accordion-button.collapsed {
-            border-radius: 1rem;
-        }
-        .accordion-item {
-            background-color: rgb(3, 43, 53);
-            color: white;
-            border-radius: 1rem;
-        }
-        .accordion-item .accordion-button {
-            color: white;
-            background-color: #62c9d5;
-            border-radius: 1rem;
-            font-size: 1.2rem;
-        }
-        .accordion-body {
-            padding: 1rem 1.25rem;
-            font-size: 1.2rem;
-        }
-        /* text input styling from here */
-        label {
-            display: inline-block;
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: rgb(3, 43, 53);
-        }
-        textarea.form-control {
-            min-height: calc(8.5em + 1.75rem + 2px);
-            background-color: #62c9d5;
-            border-radius: .5rem;
-            opacity: 27%;
-            color: #263238;
-            font-size: 1.4rem;
-        }
-        .btn-ques {
-            background-color: #62c9d5;
-            border-radius: 0.75rem;
-            font-weight: bold;
-            color: rgb(3, 43, 53);
-        }
+    /* FAQ styling mobile */
+    header {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: rgb(3, 43, 53);
+        margin-top: 15rem;
+    }
+    /* accordion styling from here */
+    .accordion-item:first-of-type {
+        border-radius: 1rem;
+        font-size: 1.2rem;
+    }
+    .accordion-item:last-of-type {
+        border-radius: 1rem;
+    }
+    .accordion-item:first-of-type .accordion-button {
+        border-radius: 1rem;
+    }
+    .accordion-item:last-of-type .accordion-button.collapsed {
+        border-radius: 1rem;
+    }
+    .accordion-item {
+        background-color: rgb(3, 43, 53);
+        color: white;
+        border-radius: 1rem;
+    }
+    .accordion-item .accordion-button {
+        color: white;
+        background-color: #62c9d5;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+    }
+    .accordion-body {
+        padding: 1rem 1.25rem;
+        font-size: 1.2rem;
+    }
+    /* text input styling from here */
+    label {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(3, 43, 53);
+    }
+    textarea.form-control {
+        min-height: calc(8.5em + 1.75rem + 2px);
+        background-color: #62c9d5;
+        border-radius: .5rem;
+        opacity: 27%;
+        color: #263238;
+        font-size: 1.4rem;
+    }
+    .btn-ques {
+        background-color: #62c9d5;
+        border-radius: 0.75rem;
+        font-weight: bold;
+        color: rgb(3, 43, 53);
+    }
     /*here starts contact us styling */
     #contactUs {
         background-color: rgb(3, 43, 53);
@@ -294,7 +294,7 @@ body {
         padding-left: 5rem;
     }
     /* here starts sec-3 styling desktop*/
-    #sec-3 {
+    #features {
         background-image: url(/assets/bg/Empty\ street-pana\ -desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -375,8 +375,7 @@ body {
         height: 60vh;
     }
     /* FAQ styling desktop */
-    #FAQ-sec{
-        padding-top: 10%;
+    #FAQ {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
@@ -391,7 +390,6 @@ body {
     /* accordion styling from here */
     .accordion-item:first-of-type {
         border-radius: 1rem;
-        
     }
     .accordion-item:last-of-type {
         border-radius: 1rem;
@@ -416,7 +414,6 @@ body {
         border-radius: 1rem;
         font-size: 1.8rem;
         padding: 2rem 1rem;
-
     }
     .accordion-body {
         padding: 1rem 1.25rem;
