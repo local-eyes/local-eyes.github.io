@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", async() => {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-    console.log("before sleep");
+    console.log("Hello. So How's it going? Make sure to sign up for early access if you're this interested in knowing how we work");
     let i = 0
-    while (i < 4) {
+    while (i < 5) {
         finalword = ""
         for (let j = 0; j <= wordsArray[i].length - 1; j++) {
             finalword += wordsArray[i][j];
@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", async() => {
         // placeholder.innerText = wordsArray[i];
         // console.log(i);
         i++
-        await sleep(2000);
-        if (i == 4) {
+        await sleep(2500);
+        if (i == 5) {
             i = 0;
         }
     }
