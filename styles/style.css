@@ -406,6 +406,7 @@ body {
         color: white;
         border-radius: 1rem;
         font-size: 1.5rem;
+        margin: 10px;
     }
     .accordion-item .accordion-button {
         color: white;
