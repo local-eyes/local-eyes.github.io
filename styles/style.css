@@ -145,6 +145,10 @@ body {
         font-weight: 500;
     } */
     /* FAQ styling mobile */
+    #FAQ {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
+    }
     header {
         text-align: center;
         font-size: 2.5rem;
@@ -172,7 +176,8 @@ body {
         border-radius: 1rem;
     }
     .accordion-item .accordion-button {
-        color: white;
+        color: black;
+        font-weight: 500;
         background-color: #62c9d5;
         border-radius: 1rem;
         font-size: 1.2rem;
@@ -409,7 +414,8 @@ body {
         margin: 10px;
     }
     .accordion-item .accordion-button {
-        color: white;
+        color: black;
+        font-weight: 500;
         background-color: #62c9d5;
         border-radius: 1rem;
         font-size: 1.8rem;
