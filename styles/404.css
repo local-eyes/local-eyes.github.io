@@ -6,3 +6,39 @@ body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
+h4{
+    color: #253858;
+    margin-bottom: .8rem;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(113, 120, 126);
+    font-family: 'Lato', sans-serif;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.btn-round {
+    border-radius: 30px !important;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 15px;
+}
