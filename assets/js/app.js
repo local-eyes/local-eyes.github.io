@@ -25,4 +25,14 @@ document.addEventListener("DOMContentLoaded", async() => {
         }
     }
     console.log("after 2 sec");
+
+    var home = document.getElementById("list-home");
+    var profile = document.getElementById("list-profile");
+    var msg = document.getElementById("list-messages");
+    // await sleep(2500);
+    home.classList.remove("active");
+    profile.classList.add("active");
+    await sleep(2500);
+    profile.classList.remove("active");
+    msg.classList.add("active");
 })

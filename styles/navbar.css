@@ -1,3 +1,8 @@
+:root {
+    --nav-shadow-default: 8px 8px rgb(3, 43, 53);
+    --nav-shadow-hover: 2px 2px rgb(3, 43, 53);
+}
+
 .navbar {
     border-radius: 1.10rem;
     background-color: white;
@@ -53,4 +58,16 @@
     margin: 0 0rem;
     width: 7rem;
     height: 3.1rem;
+    transition: .2s;
+    box-shadow: var(--nav-shadow-default);
+}
+
+.btn-nav-sign:hover {
+    box-shadow: var(--nav-shadow-hover);
+}
+
+.btn-nav-sign:active,
+.btn-nav-sign:focus {
+    transform: scale(0.9);
+    box-shadow: var(--nav-shadow-hover);
 }

@@ -1,3 +1,8 @@
+:root {
+    --shadow-default: 12px 12px #62c9d5;
+    --shadow-hover: 3px 3px #62c9d5;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -5,6 +10,11 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+
+input[type='email']:focus {
+    border: 2px solid #62c9d5;
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.26);
 }
 
 
@@ -84,7 +94,7 @@ body {
         color: #455a64;
     }
     .btn-explore {
-        box-shadow: 3px 6px 25px rgb(0 0 0 / 30%);
+        box-shadow: var(--shadow-default);
         background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
         font-weight: 400;
@@ -93,7 +103,7 @@ body {
     .btn-explore:hover {
         color: white;
         transform: scale(1.1);
-        box-shadow: 3px 6px 24px rgb(0 0 0 / 50%);
+        box-shadow: var(--shadow-hover)
     }
     /* here starts sec-4 styling */
     #whyUs {
@@ -320,18 +330,17 @@ body {
         color: #455a64;
     }
     .btn-explore {
-        box-shadow: 3px 6px 25px rgb(0 0 0 / 30%);
+        box-shadow: var(--shadow-default);
         background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
         font-weight: 500;
         font-size: 2.5rem;
         color: white;
-        transition: .5s;
+        transition: .2s;
     }
     .btn-explore:hover {
         color: white;
-        transform: scale(1.1);
-        box-shadow: 3px 6px 24px rgb(0 0 0 / 50%);
+        box-shadow: var(--shadow-hover)
     }
     /* here starts section 4 styling desktop*/
     #whyUs {
@@ -365,7 +374,7 @@ body {
     }
     .list-group-item.list-group-item-action:hover {
         transform: scale(1.1);
-        box-shadow: 3px 6px 24px rgb(0 0 0 / 50%);
+        box-shadow: var(--shadow-default)
     }
     .list-group-item.active:hover {
         transform: none;
