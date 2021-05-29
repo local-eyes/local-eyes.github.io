@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <script src="./assets/js/app.js"></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -236,9 +235,9 @@
             <div class="col-12">
                 <div class="list-group" id="list-tab" role="tablist">
 
-                    <a class="list-group-item list-group-item-action d-flex active justify-content-center" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Gen-Z</a>
-                    <a class="list-group-item list-group-item-action  d-flex justify-content-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Millennial</a>
-                    <a class="list-group-item list-group-item-action d-flex justify-content-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Boomers</a>
+                    <a class="list-group-item list-group-item-action d-flex active justify-content-center" id="list-home-list" data-bs-toggle="list" onmouseover="stopAnimation()" href="#list-home" role="tab" aria-controls="list-home">Gen-Z</a>
+                    <a class="list-group-item list-group-item-action  d-flex justify-content-center" id="list-profile-list" data-bs-toggle="list" onmouseover="stopAnimation()" href="#list-profile" role="tab" aria-controls="list-profile">Millennial</a>
+                    <a class="list-group-item list-group-item-action d-flex justify-content-center" id="list-messages-list" data-bs-toggle="list" onmouseover="stopAnimation()" href="#list-messages" role="tab" aria-controls="list-messages">Boomers</a>
                 </div>
             </div>
             <div class="col-12">
@@ -491,6 +490,7 @@
         </div>
     </footer>
 
+    <script src="./assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();

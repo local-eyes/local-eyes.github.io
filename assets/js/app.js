@@ -24,15 +24,23 @@ document.addEventListener("DOMContentLoaded", async() => {
             i = 0;
         }
     }
-    console.log("after 2 sec");
-
-    var home = document.getElementById("list-home");
-    var profile = document.getElementById("list-profile");
-    var msg = document.getElementById("list-messages");
-    // await sleep(2500);
-    home.classList.remove("active");
-    profile.classList.add("active");
-    await sleep(2500);
-    profile.classList.remove("active");
-    msg.classList.add("active");
 })
+
+var genz = document.getElementById("list-home-list");
+var millenial = document.getElementById("list-profile-list");
+var boomer = document.getElementById("list-messages-list");
+var id_list = [genz, millenial, boomer];
+var active_btn = 0;
+
+var animator = setInterval(async() => {
+    // console.log(active_btn);
+    id_list[active_btn + 1].click();
+    active_btn++;
+    if (active_btn >= 2) {
+        active_btn = -1;
+    }
+}, 3500);
+
+function stopAnimation() {
+    window.clearInterval(animator);
+}
