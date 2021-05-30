@@ -5,17 +5,72 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
 }
 
 .highlight {
     color: #62c9d5!important;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 
+
+
+h1 {
+    font-size: 36px;
+    color: #555;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+#team i {
+    font-size: 26px;
+    color: #555;
+}
+
+#team p {
+    font-weight: 500;
+}
+
+#team .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #62c9d5;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+#team .card:hover {
+    background: #4ea4ad;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #9e9e9e;
+}
+
+#team .card:hover h3,
+#team .card:hover i {
+    color: #fff;
+}
 
 /* mobile view styling */
 
 @media (max-width:991px) {
-
+/* team styling mobile */
+.team-head{
+    margin-top: 25%;
+}
     /* early access styling from here */
     #label-id {
         font-size: 1.3rem;
@@ -66,7 +121,10 @@ body {
 /* desktop view styling */
 
 @media(min-width:992px) {
-
+/* team styling mobile */
+.team-head{
+    margin-top: 12%;
+}
     /* early access */
     #label-id {
         font-size: 3rem;
