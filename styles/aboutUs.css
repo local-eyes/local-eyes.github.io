@@ -67,6 +67,15 @@ h3 {
 /* mobile view styling */
 
 @media (max-width:991px) {
+    /* mission */
+    #mission-col{
+        margin-top: 11%;
+        text-align:center;
+    }
+    #mission-sub{
+        color: #455A64;
+        font-size: 1.5rem;
+    }
 /* team styling mobile */
 .team-head{
     margin-top: 25%;
@@ -121,6 +130,11 @@ h3 {
 /* desktop view styling */
 
 @media(min-width:992px) {
+ /* mission */
+ #mission-sub{
+     color: #455A64;
+     font-size: 2rem;
+    }
 /* team styling mobile */
 .team-head{
     margin-top: 12%;
