@@ -13,12 +13,11 @@ body {
 .highlight {
     color: #62c9d5!important;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
-
-
 
 h1 {
     font-size: 36px;
@@ -32,8 +31,6 @@ h3 {
     font-weight: bold;
 }
 
-
-
 #team i {
     font-size: 26px;
     color: #555;
@@ -44,8 +41,8 @@ h3 {
 }
 
 #team .card {
-    border-radius: 0;
-    box-shadow: 5px 5px 15px #9e9e9e;
+    border-radius: 2.5rem;
+    box-shadow: 3px 16px 44px rgb(0 0 0 / 23%);
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -53,10 +50,10 @@ h3 {
 
 #team .card:hover {
     background: #62c9d5;
-    color: #fff;
-    border-radius: 5px;
+    color: white;
+    border-radius: 2.5rem;
     border: none;
-    box-shadow: 5px 5px 10px #9e9e9e;
+    box-shadow: 3px 16px 44px rgb(0 0 0 / 23%);
 }
 
 #team .card:hover h3,
@@ -64,25 +61,26 @@ h3 {
     color: #fff;
 }
 
+
 /* mobile view styling */
 
 @media (max-width:991px) {
     /* mission */
-    #mission-col{
+    #mission-col {
         margin-top: 11%;
-        text-align:center;
+        text-align: center;
     }
-    #mission-sub{
+    #mission-sub {
         color: #455A64;
         font-size: 1.5rem;
     }
-/* team styling mobile */
-#team{
-    margin-top:1%;
-}
-.mission-head{
-    margin-top: 25%;
-}
+    /* team styling mobile */
+    #team {
+        margin-top: 1%;
+    }
+    .mission-head {
+        margin-top: 25%;
+    }
     /* early access styling from here */
     #label-id {
         font-size: 1.3rem;
@@ -133,19 +131,21 @@ h3 {
 /* desktop view styling */
 
 @media(min-width:992px) {
-
- /* mission */
- #mission-sub{
-     color: #455A64;
-     font-size: 2rem;
+    .card {
+        max-width: 25vw!important;
     }
-/* team styling mobile */
-#team{
-    margin-top:10%;
-}
-.mission-head{
-    margin-top: 12%;
-}
+    /* mission */
+    #mission-sub {
+        color: #455A64;
+        font-size: 2rem;
+    }
+    /* team styling mobile */
+    #team {
+        margin-top: 10%;
+    }
+    .mission-head {
+        margin-top: 12%;
+    }
     /* early access */
     #label-id {
         font-size: 3rem;
