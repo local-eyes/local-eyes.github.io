@@ -77,7 +77,10 @@ h3 {
         font-size: 1.5rem;
     }
 /* team styling mobile */
-.team-head{
+#team{
+    margin-top:1%;
+}
+.mission-head{
     margin-top: 25%;
 }
     /* early access styling from here */
@@ -130,13 +133,17 @@ h3 {
 /* desktop view styling */
 
 @media(min-width:992px) {
+
  /* mission */
  #mission-sub{
      color: #455A64;
      font-size: 2rem;
     }
 /* team styling mobile */
-.team-head{
+#team{
+    margin-top:10%;
+}
+.mission-head{
     margin-top: 12%;
 }
     /* early access */
