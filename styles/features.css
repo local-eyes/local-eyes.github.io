@@ -23,7 +23,7 @@ body {
 @media(max-width:991px) {
     .features-col {
         border: 2px solid #62c9d5;
-        height: 51rem;
+        height: 53rem;
     }
     .features-col-sm {
         border: 2px solid #62c9d5;
