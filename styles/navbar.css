@@ -56,7 +56,7 @@
     color: rgb(3, 43, 53);
     font-size: 1.28rem;
     margin: 0 0rem;
-    width: 7rem;
+    width: 8rem;
     height: 3.1rem;
     transition: .2s;
     box-shadow: var(--nav-shadow-default);
@@ -70,4 +70,7 @@
 .btn-nav-sign:focus {
     transform: scale(0.9);
     box-shadow: var(--nav-shadow-hover);
+}
+.nav-item:last-of-type{
+    padding-bottom: 1rem;
 }
