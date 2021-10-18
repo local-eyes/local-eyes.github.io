@@ -41,6 +41,13 @@ input[type='email']:focus {
     .highlight {
         color: #62c9d5!important;
     }
+    #openInBrowser{
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: 1.2rem;
+    }
     .btn-signup {
         background-color: #62c9d5;
         border-radius: 0.75rem;
@@ -275,6 +282,12 @@ input[type='email']:focus {
         color: rgb(3, 43, 53);
         font-size: 1.35rem;
         margin: 0 0rem;
+    }
+    #openInBrowser{
+        background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: .5rem;
     }
     .meetLocalEyes {
         margin-left: 20px;
@@ -517,5 +530,24 @@ input[type='email']:focus {
         color: rgb(3, 43, 53);
         font-size: 2rem;
         margin: 2.8rem 4.5rem;
+    }
+}
+/* desktop view styling  */
+@media (min-width:1200px){
+    /*section-1  */
+    #openInBrowser{
+        background-color: black;
+    color: white;
+    font-size: 2.1rem;
+    border-radius: .5rem
+    }
+    
+}
+@media (min-width:1400px){
+    #openInBrowser{
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: .5rem
     }
 }
