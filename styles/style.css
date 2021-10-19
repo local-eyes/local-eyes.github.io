@@ -23,7 +23,7 @@ input[type='email']:focus {
 @media (max-width:991px) {
     .bg {
         /* padding-top:75px; */
-        padding: 13rem 0;
+        padding-top: 13rem;
         background-color: white;
     }
     .head {
@@ -265,7 +265,7 @@ input[type='email']:focus {
         font-weight: bold!important;
     }
     .bg {
-        padding: 15rem 0;
+        padding-top: 15rem;
         background-color: white;
     }
     .tagline {
@@ -287,7 +287,7 @@ input[type='email']:focus {
         background-color: black;
     color: white;
     font-size: 1.5rem;
-    border-radius: .5rem;
+    border-radius: 2.5rem;
     }
     .meetLocalEyes {
         margin-left: 20px;
@@ -538,16 +538,8 @@ input[type='email']:focus {
     #openInBrowser{
         background-color: black;
     color: white;
-    font-size: 2.1rem;
-    border-radius: .5rem
+    font-size: 2.3rem;
+    border-radius: 1.5rem
     }
     
-}
-@media (min-width:1400px){
-    #openInBrowser{
-    background-color: black;
-    color: white;
-    font-size: 2.5rem;
-    border-radius: .5rem
-    }
 }
