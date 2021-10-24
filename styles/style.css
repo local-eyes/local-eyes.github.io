@@ -101,6 +101,7 @@ input[type='email']:focus {
         color: #455a64;
     }
     .btn-explore {
+        font-size: 1.9rem;
         box-shadow: var(--shadow-default);
         background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
