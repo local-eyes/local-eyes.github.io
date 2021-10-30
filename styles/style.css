@@ -5,6 +5,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -58,11 +59,11 @@ input[type='email']:focus {
     }
     #head-page-2 {
         font-size: 3rem;
-        color: #263238;
+        color: rgb(3, 43, 53);
     }
     #page-2-content {
         font-size: 1.5rem;
-        color: #263238;
+        color: rgb(3, 43, 53);
     }
     #sec-2 {
         background-color: white;
@@ -88,17 +89,17 @@ input[type='email']:focus {
         padding-top: 15%;
     }
     .pg-3-head {
-        color: #455a64;
+        color: rgb(3, 43, 53);
         font-size: 3rem;
     }
     .subHead-page-3 {
         font-weight: 400;
-        color: #455a64;
+        color: rgb(3, 43, 53);
         font-size: 3rem;
     }
     .page-3-content {
         font-size: 1.5rem;
-        color: #455a64;
+        color: rgb(3, 43, 53);
     }
     .btn-explore {
         font-size: 1.9rem;
