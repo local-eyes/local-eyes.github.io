@@ -5,6 +5,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -31,39 +32,33 @@ input[type='email']:focus {
         color: black;
         /* margin: 1.5rem 0; */
         font-weight: bold!important;
-        font-size: 3.3rem;
+        font-size: 2.8rem;
     }
-    .tagline {
-        color: rgb(92, 92, 92);
+    .sub-content {
+        color: rgb(31, 30, 30);
         margin: 1.5rem 0;
-        font-size: 20px!important;
+        font-size: 2rem!important;
     }
     .highlight {
         color: #62c9d5!important;
     }
-    #openInBrowser{
-    background-color: black;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: .5rem;
-    padding: 1.2rem;
-    }
-    .btn-signup {
+   
+    /* .btn-signup {
         background-color: #62c9d5;
         border-radius: 0.75rem;
         font-weight: bold;
         color: rgb(3, 43, 53);
         font-size: 1.35rem;
         margin: 0 10rem;
-    }
-    #head-page-2 {
-        font-size: 3rem;
-        color: #263238;
+    } */
+    /* #head-page-2 {
+        font-size: 3.3rem;
+        color: rgb(3, 43, 53);
     }
     #page-2-content {
         font-size: 1.5rem;
-        color: #263238;
-    }
+        color: rgb(3, 43, 53);
+    } */
     #sec-2 {
         background-color: white;
         padding-top: 1rem;
@@ -74,10 +69,10 @@ input[type='email']:focus {
         padding: 4rem 0;
         box-shadow: 3px 6px 24px rgb(0 0 0 / 10%);
     }
-    #girlImage-Div {
+    /* #girlImage-Div {
         padding-top: 7rem;
         padding-left: 4rem;
-    }
+    } */
     /* features page styling mobile*/
     #features {
         background-image: url(/assets/bg/Empty\ street-pana\ \(1\).png);
@@ -88,19 +83,20 @@ input[type='email']:focus {
         padding-top: 15%;
     }
     .pg-3-head {
-        color: #455a64;
-        font-size: 3rem;
+        color: rgb(3, 43, 53);
+        font-size: 3.5rem;
     }
     .subHead-page-3 {
         font-weight: 400;
-        color: #455a64;
+        color: rgb(3, 43, 53);
         font-size: 3rem;
     }
     .page-3-content {
-        font-size: 1.5rem;
-        color: #455a64;
+        font-size: 2rem;
+        color: rgb(3, 43, 53);
     }
     .btn-explore {
+        font-size: 1.9rem;
         box-shadow: var(--shadow-default);
         background-color: rgb(3, 43, 53);
         border-radius: 0.75rem;
@@ -117,6 +113,15 @@ input[type='email']:focus {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
+    /* #comHeight1{
+        height: 42rem!important;
+    }
+    #comHeight2{
+        height: 42rem!important;
+    }
+    #comHeight3{
+        height: 42rem!important;
+    } */
     .whyUsHead {
         color: #455a64;
         font-size: 3rem;
@@ -260,7 +265,7 @@ input[type='email']:focus {
 
 @media (min-width:992px) {
     .head {
-        font-size: 4.5rem;
+        font-size: 4rem;
         color: black;
         font-weight: bold!important;
     }
@@ -268,39 +273,28 @@ input[type='email']:focus {
         padding-top: 15rem;
         background-color: white;
     }
-    .tagline {
+    .sub-content {
         color: rgb(92, 92, 92);
         margin: 1.5rem 0;
+        font-size: 2.5rem;
     }
     .highlight {
         color: #62c9d5!important;
     }
-    .btn-signup {
-        background-color: #62c9d5;
-        border-radius: 0.75rem;
-        font-weight: bold;
-        color: rgb(3, 43, 53);
-        font-size: 1.35rem;
-        margin: 0 0rem;
-    }
-    #openInBrowser{
-        background-color: black;
-    color: white;
-    font-size: 1.5rem;
-    border-radius: 2.5rem;
-    }
+   
+   
+    /* here starts sec-2 styling */
     .meetLocalEyes {
         margin-left: 20px;
     }
-    /* here starts sec-2 styling */
-    #head-page-2 {
-        font-size: 4rem;
+    /* #head-page-2 {
+        font-size: 4.5rem;
         color: #263238;
-    }
-    #page-2-content {
+    } */
+    /* #page-2-content {
         font-size: 1.8rem;
         color: #263238;
-    }
+    } */
     #sec-2 {
         background-color: white;
         padding-top: 4rem;
