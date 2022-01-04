@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -49,7 +50,7 @@ h3 {
 }
 
 #team .card:hover {
-    background: #62c9d5;
+    background: rgb(3, 43, 53);
     color: white;
     border-radius: 2.5rem;
     border: none;

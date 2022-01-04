@@ -1,0 +1,79 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+.gradient-custom {
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%); */
+  position: relative;
+
+}
+.gradient-custom::before {    
+  content: "";
+  background-image:linear-gradient(rgba(0, 0, 0, 0.589),rgba(0, 0, 0, 0.588)) ,url(../SignUp/image/signInBackground.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  
+  
+}
+.contain-block{
+  position: relative;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width:992px){
+  #cardSign{
+    border-radius: 1rem;
+   background-color:rgb(3, 43, 53);
+   height:555px ;
+   /* display: flex;
+   justify-content: space-evenly; */
+  }
+  #taglineForm{
+    font-size: 13px;
+    font-weight: 500;
+    color: #dee2e6;  
+  }
+  #terms-text{
+    font-size: 12px;
+    padding: .33rem;
+    text-align: center;
+    
+  }
+
+}
+@media (min-width: 768px) { 
+  #cardSign{
+    border-radius: 1rem;
+   background-color:rgb(3, 43, 53);
+   height:600px ;
+   width: 400px;
+   display: flex;
+   justify-content: space-evenly;
+  }
+  #taglineForm{
+    font-size: 15px;
+    font-weight: 500;
+    color: #dee2e6;
+  }
+  #terms-text{
+    font-size: 15px;
+    padding: .33rem;
+    text-align: center;
+    
+  }
+}
+
