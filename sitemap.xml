@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://localeyes.in/app/</loc>
+  <lastmod>2022-03-17T20:43:08+00:00</lastmod>
+  <priority>0.95</priority>
+</url>
+<url>
   <loc>https://localeyes.in/about/</loc>
   <lastmod>2022-03-17T20:43:08+00:00</lastmod>
   <priority>0.80</priority>
