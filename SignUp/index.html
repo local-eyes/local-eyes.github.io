@@ -48,9 +48,9 @@
                                 Continue By:
                             </div>
                             <div>
-                                <a class="btn border-white text-nowrap " style="color: rgb(83, 82, 82); background-color: white;" role="button" style="text-transform:none">
+                                <button class="btn border-white text-nowrap " style="color: rgb(83, 82, 82); background-color: white; text-transform:none" id="sign-in-btn">
                                     <img class="img-fluid" width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />                                    Sign In with Google
-                                </a>
+                                </button>
                             </div>
                             <p class="text-white-50  mt-2" id="terms-text">I have Read and agree to the <a href="/privacy-policy/" style="color: #62C9d5;">Privacy Policy</a> And <a href="/terms-of-use/" style="color: #62C9d5;">Terms of Use.</a>
                             </p>
@@ -63,5 +63,29 @@
     <script type="module" src="./sign-in.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    import { getAuth, GoogleAuthProvider, signInWithPopup, connectAuthEmulator } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyD2Q53YOsXBQBEqgqoayCReYYXhemTVCUI",
+      authDomain: "localeyes-95d0d.firebaseapp.com",
+      projectId: "localeyes-95d0d",
+      appId: "1:847201898317:web:7a72d72afb4d81bcd53104",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    // connectAuthEmulator(auth, "http://localhost:9099");
+
+    document.getElementById("sign-in-btn").addEventListener("click", function() {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                window.location = '/app';
+            }).catch((error) => {
+                console.log(error);
+            });
+    });
+  </script>
 
 </html>
