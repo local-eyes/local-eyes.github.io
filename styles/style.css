@@ -27,22 +27,25 @@ input[type='email']:focus {
         padding-top: 13rem;
         background-color: white;
     }
+
     .head {
         /* font-size: 2.5rem; */
         color: black;
         /* margin: 1.5rem 0; */
-        font-weight: bold!important;
+        font-weight: bold !important;
         font-size: 2.8rem;
     }
+
     .sub-content {
         color: rgb(31, 30, 30);
         margin: 1.5rem 0;
-        font-size: 2rem!important;
+        font-size: 2rem !important;
     }
+
     .highlight {
-        color: #62c9d5!important;
+        color: #62c9d5 !important;
     }
-   
+
     /* .btn-signup {
         background-color: #62c9d5;
         border-radius: 0.75rem;
@@ -64,11 +67,13 @@ input[type='email']:focus {
         padding-top: 1rem;
         padding-bottom: 5rem;
     }
+
     #sec-2-bg {
         background: rgb(255, 255, 255);
         padding: 4rem 0;
         box-shadow: 3px 6px 24px rgb(0 0 0 / 10%);
     }
+
     /* #girlImage-Div {
         padding-top: 7rem;
         padding-left: 4rem;
@@ -82,19 +87,28 @@ input[type='email']:focus {
         background-attachment: fixed;
         padding-top: 15%;
     }
+
     .pg-3-head {
         color: rgb(3, 43, 53);
         font-size: 3.5rem;
     }
+
     .subHead-page-3 {
         font-weight: 400;
         color: rgb(3, 43, 53);
         font-size: 3rem;
+        margin-top: 2rem;
     }
+
+    #downloadNowButtonContainer {
+        margin: 8rem auto;
+    }
+
     .page-3-content {
         font-size: 2rem;
         color: rgb(3, 43, 53);
     }
+
     .btn-explore {
         font-size: 1.9rem;
         box-shadow: var(--shadow-default);
@@ -103,16 +117,19 @@ input[type='email']:focus {
         font-weight: 400;
         color: white;
     }
+
     .btn-explore:hover {
         color: white;
         transform: scale(1.1);
         box-shadow: var(--shadow-hover)
     }
+
     /* here starts sec-4 styling */
     #whyUs {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
+
     /* #comHeight1{
         height: 42rem!important;
     }
@@ -126,9 +143,11 @@ input[type='email']:focus {
         color: #455a64;
         font-size: 3rem;
     }
+
     .list-group {
         flex-direction: row;
     }
+
     .list-group-item.list-group-item-action {
         background-color: #032b35;
         color: white;
@@ -137,14 +156,17 @@ input[type='email']:focus {
         border-radius: 2.4rem;
         margin: auto;
     }
+
     .list-group-item.active {
-        background-color: #62c9d5!important;
+        background-color: #62c9d5 !important;
         color: black;
-        border-color: #1ceeee!important;
+        border-color: #1ceeee !important;
     }
+
     .tab-content>.active {
         height: 70%;
     }
+
     /*here starts sec-6 styling  */
     /* #sec-6-head {
         color: rgb(3, 43, 53);
@@ -171,6 +193,7 @@ input[type='email']:focus {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
+
     header {
         text-align: center;
         font-size: 2.5rem;
@@ -178,25 +201,31 @@ input[type='email']:focus {
         color: rgb(3, 43, 53);
         margin-top: 15rem;
     }
+
     /* accordion styling from here */
     .accordion-item:first-of-type {
         border-radius: 1rem;
         font-size: 1.2rem;
-    }
+    }bgdhghgdhdhdhgdhg
+
     .accordion-item:last-of-type {
         border-radius: 1rem;
     }
+
     .accordion-item:first-of-type .accordion-button {
         border-radius: 1rem;
     }
+
     .accordion-item:last-of-type .accordion-button.collapsed {
         border-radius: 1rem;
     }
+
     .accordion-item {
         background-color: rgb(3, 43, 53);
         color: white;
         border-radius: 1rem;
     }
+
     .accordion-item .accordion-button {
         color: black;
         font-weight: 500;
@@ -204,10 +233,12 @@ input[type='email']:focus {
         border-radius: 1rem;
         font-size: 1.2rem;
     }
+
     .accordion-body {
         padding: 1rem 1.25rem;
         font-size: 1.2rem;
     }
+
     /* text input styling from here */
     label {
         display: inline-block;
@@ -215,6 +246,7 @@ input[type='email']:focus {
         font-weight: 500;
         color: rgb(3, 43, 53);
     }
+
     textarea.form-control {
         min-height: calc(8.5em + 1.75rem + 2px);
         background-color: #62c9d5;
@@ -223,35 +255,42 @@ input[type='email']:focus {
         color: #263238;
         font-size: 1.4rem;
     }
+
     .btn-ques {
         background-color: #62c9d5;
         border-radius: 0.75rem;
         font-weight: bold;
         color: rgb(3, 43, 53);
     }
+
     /*here starts contact us styling */
     #contactUs {
         background-color: rgb(3, 43, 53);
     }
+
     #contactUs-head {
         font-size: 2.5rem;
         font-weight: 700;
         padding: 2rem 0;
     }
+
     .contactUs-col {
         padding: 1rem 5rem;
         height: 12rem;
     }
+
     .conDetails {
         color: white;
         font-size: 1.7rem;
         font-weight: 500;
     }
+
     /* footer styling from here */
     footer {
         border-top: 1px solid #62c9d5;
         background-color: rgb(3, 43, 53);
     }
+
     .btn-footer {
         background-color: #62c9d5;
         border-radius: 0.75rem;
@@ -267,26 +306,30 @@ input[type='email']:focus {
     .head {
         font-size: 4rem;
         color: black;
-        font-weight: bold!important;
+        font-weight: bold !important;
     }
+
     .bg {
         padding-top: 15rem;
         background-color: white;
     }
+
     .sub-content {
         color: rgb(92, 92, 92);
         margin: 1.5rem 0;
         font-size: 2.5rem;
     }
+
     .highlight {
-        color: #62c9d5!important;
+        color: #62c9d5 !important;
     }
-   
-   
+
+
     /* here starts sec-2 styling */
     .meetLocalEyes {
         margin-left: 20px;
     }
+
     /* #head-page-2 {
         font-size: 4.5rem;
         color: #263238;
@@ -300,20 +343,24 @@ input[type='email']:focus {
         padding-top: 4rem;
         padding-bottom: 5rem;
     }
+
     #sec-2-bg {
         background: rgb(255, 255, 255);
         padding: 0;
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, transparent 50%, transparent 100%);
     }
+
     .container.about {
         background-color: white;
         border-radius: 6rem;
         padding: 6rem 0;
         box-shadow: 3px 6px 24px rgb(0 0 0 / 10%);
     }
+
     #girlImage-Div {
         padding-left: 5rem;
     }
+
     /* here starts sec-3 styling desktop*/
     #features {
         background-image: url(/assets/bg/Empty\ street-pana\ -desktop.png);
@@ -323,19 +370,27 @@ input[type='email']:focus {
         background-attachment: fixed;
         padding-top: 8%;
     }
+
     .pg-3-head {
         color: #455a64;
         font-size: 4rem;
     }
+
     .subHead-page-3 {
         font-size: 4.5rem;
         font-weight: 500;
         color: #455a64;
     }
+
     .page-3-content {
         font-size: 2rem;
         color: #455a64;
     }
+
+    #downloadNowButtonContainer {
+        margin: 8rem auto;
+    }
+
     .btn-explore {
         box-shadow: var(--shadow-default);
         background-color: rgb(3, 43, 53);
@@ -345,26 +400,32 @@ input[type='email']:focus {
         color: white;
         transition: .2s;
     }
+
     .btn-explore:hover {
         color: white;
         box-shadow: var(--shadow-hover)
     }
+
     /* here starts section 4 styling desktop*/
     #whyUs {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
+
     .whyUsHead {
         color: #455a64;
         font-size: 3rem;
     }
+
     .list-group.list-group-item {
         color: #455a64;
     }
+
     .list-group {
         flex-direction: row;
         color: #62c9d5;
     }
+
     .list-group-item.list-group-item-action {
         background-color: #032b35;
         color: white;
@@ -374,31 +435,38 @@ input[type='email']:focus {
         border-radius: 2.4rem;
         transition: transform 0.3s, box-shadow 0.3s;
     }
+
     .list-group-item.active {
-        background-color: #62c9d5!important;
+        background-color: #62c9d5 !important;
         color: black;
-        border-color: #1ceeee!important;
+        border-color: #1ceeee !important;
     }
+
     .list-group-item.list-group-item-action:hover {
         transform: scale(1.1);
         box-shadow: var(--shadow-default)
     }
+
     .list-group-item.active:hover {
         transform: none;
         box-shadow: none;
     }
+
     .tab-content>.active {
         height: 70vh;
     }
+
     .tab-pane:nth-child(3) {
-        margin-top: 70px!important;
+        margin-top: 70px !important;
         height: 60vh;
     }
+
     /* FAQ styling desktop */
     #FAQ {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(98, 201, 213, 0.4906337535014006) 100%);
     }
+
     header {
         text-align: center;
         font-size: 4.5rem;
@@ -407,21 +475,26 @@ input[type='email']:focus {
         /* margin-top: 15rem;
         margin-bottom: 2rem; */
     }
+
     /* accordion styling from here */
     .accordion-item:first-of-type {
         border-radius: 1rem;
     }
+
     .accordion-item:last-of-type {
         border-radius: 1rem;
     }
+
     .accordion-item:first-of-type .accordion-button {
         border-radius: 1rem;
         padding: 2rem 1rem;
         font-size: 1.8rem;
     }
+
     .accordion-item:last-of-type .accordion-button.collapsed {
         border-radius: 1rem;
     }
+
     .accordion-item {
         background-color: rgb(3, 43, 53);
         color: white;
@@ -429,6 +502,7 @@ input[type='email']:focus {
         font-size: 1.5rem;
         margin: 10px;
     }
+
     .accordion-item .accordion-button {
         color: black;
         font-weight: 500;
@@ -437,10 +511,12 @@ input[type='email']:focus {
         font-size: 1.8rem;
         padding: 2rem 1rem;
     }
+
     .accordion-body {
         padding: 1rem 1.25rem;
         font-size: 1.7rem;
     }
+
     /* text input styling from here */
     label {
         display: inline-block;
@@ -448,6 +524,7 @@ input[type='email']:focus {
         font-weight: 600;
         color: rgb(3, 43, 53);
     }
+
     textarea.form-control {
         min-height: calc(14em + 1.75rem + 2px);
         background-color: #62c9d5;
@@ -456,6 +533,7 @@ input[type='email']:focus {
         font-size: 1.5rem;
         color: rgb(3, 43, 53);
     }
+
     .btn-ques {
         background-color: #62c9d5;
         border-radius: 0.75rem;
@@ -463,6 +541,7 @@ input[type='email']:focus {
         font-size: 1.5rem;
         color: rgb(3, 43, 53);
     }
+
     /* here starts section-6 styling */
     /* .sec-6-row {
         height: 61rem;
@@ -494,6 +573,7 @@ input[type='email']:focus {
     #contactUs {
         background-color: rgb(3, 43, 53);
     }
+
     #contactUs-head {
         color: white;
         font-size: 4rem;
@@ -501,22 +581,27 @@ input[type='email']:focus {
         margin: 0rem 12rem;
         padding-top: 2rem;
     }
+
     .contactUs-col {
         margin-left: 6rem;
     }
+
     .contactUs-img-col {
         margin: 4rem 0rem;
     }
+
     .conDetails {
         color: white;
         font-size: 2.5rem;
         font-weight: 500;
     }
+
     /* footer styling from here */
     footer {
         border-top: 2px solid #62c9d5;
         background-color: rgb(3, 43, 53);
     }
+
     .btn-footer {
         background-color: #62c9d5;
         border-radius: 0.75rem;
@@ -526,14 +611,16 @@ input[type='email']:focus {
         margin: 2.8rem 4.5rem;
     }
 }
+
 /* desktop view styling  */
-@media (min-width:1200px){
+@media (min-width:1200px) {
+
     /*section-1  */
-    #openInBrowser{
+    #openInBrowser {
         background-color: black;
-    color: white;
-    font-size: 2.3rem;
-    border-radius: 1.5rem
+        color: white;
+        font-size: 2.3rem;
+        border-radius: 1.5rem
     }
-    
+
 }
