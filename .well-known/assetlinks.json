@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tech.dagurmittal.app",
+      "sha256_cert_fingerprints": [
+        "8C:9B:EC:43:A6:E4:A5:88:87:FE:95:E6:26:8A:54:C9:55:55:F6:58:30:13:07:F8:D6:B1:5F:4B:14:25:3E:72"
+      ]
+    }
+  }
+]
