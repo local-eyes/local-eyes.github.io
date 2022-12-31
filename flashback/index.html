@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalEyes Flashback</title>
+    <link rel="icon" href="./assets/512x512-01.png" type="img/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body style="max-height: 100vh;">
+    <div id="generator" class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh; min-width: 100vw; background-color: #2bc4ed; position: fixed; top: 0; left: 0; z-index: 999999;">
+        <img src="https://i.pinimg.com/originals/ed/d5/09/edd509e3b5b563c84a1b33e2f2ae07b2.gif" alt="loading" class="w-100">
+        <h1 class="text-light" id="preload-text"></h1>
+        <div class="progress w-100" style="visibility: hidden;" id="progress_wrapper">
+            <div class="progress-bar progress-bar-striped progress-bar-animated highlight" style="width: 0;" role="progressbar" id="progress_bar_slider" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
+        </div>
+    </div>
+    <div class="d-flex flex-row">
+        <!-- Welcome Screen -->
+        <div id="back" onclick="goToPrevPage()"></div>
+        <div id="forward" onclick="goToNextPage()" class="bold"></div>
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/bg_p1_new.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section1">
+            <p class="welcome-text">Welcome to <span class="welcome-text bold">Local<span class="welcome-text bold highlight">Eyes</span></span> Flashback '22</p>
+        </section>
+
+        <!-- Introduction + Name -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/bg-names.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section2">
+            <img src="./assets/wrapped_text.png" alt="text" style="width: 100vw; z-index: 99;">
+            <p class="sub-text mx-4" style="font-weight: 700; font-size: 25px;">What's fun about 2022? Well, the Moments that we spent with you</p>
+            <h2 class="welcome-text text-capitalize" id="user-name" style="color: #62c9d5"></h2>
+        </section>
+
+        <!-- Time since LocalEyes User -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/bg-rotate.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section3">
+            <div class="m-3" style="background-color: #0c1433; border: 2px solid #62c9d5; border-radius: 20px;">
+                <p class="sub-text my-5" style="font-size: 20px;">Time flies when you're having fun</p>
+                <h2 class="sub-text my-5" style="color: orange; font-size: 17px;">You're a true community superstar. You've been with us for</h2>
+                <div class="d-flex flex-row justify-content-evenly text-light mb-5">
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-year">0</h2><span> Years</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-days">0</h2><span> Days</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-hours">0</h2><span> Hours</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-mins">0</h2><span> Minutes</span></div>
+                </div>
+                <h2 class="welcome-text" style="font-size: 15px;">(PS. We Love You 💝)</h2>
+            </div>
+        </section>
+
+        <!-- App Open Count -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/page-4.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section4">
+            <h1 id="app-open-title" class="welcome-text" style="font-size:25px; font-weight: 700;"></h1>
+            <p class="sub-text" style="font-size: 90px; font-weight: 900; color: #ffbd59; filter: drop-shadow(13px 10px black);" id="app-streaks">0</p>
+            <h1 class="welcome-text" style="font-weight: 900; color: #ffbd59; filter: drop-shadow(13px 10px black);">times</h1>
+            <p id="app-open-subtitle" class="text-dark" style="text-decoration: underline #ffbd59;"></p>
+        </section>
+
+        <!-- Favorite Notifications -->
+        <section style="min-height: 100vh; min-width: 100vw; background-color: #62c9d5;" class="wrapper" id="section5">
+            <div class="py-5" style="background-color: #fabb17; border-radius: 30px;">
+                <h1 class="sub-text">We know you love</h1>
+                <p class="sub-text mx-5" style="font-size: 60px; font-weight: 900; color: #1c1c1c; border: 5px solid #000; border-radius: 20px;" id="fave-notif"></p>
+                <h3 class="sub-text" style="font-size: 24px;">and that is why you've clicked on it's notifications</h3>
+                <p class="sub-text mx-5 bg-light" style="font-size: 90px; font-weight: 900; color: #1c1c1c; border-radius: 100% 100% 10% 10%;" id="fave-notif-count">0</p>
+                <h3 class="sub-text" style="font-size: 24px;">times</h3>
+            </div>
+        </section>
+
+        <!-- Avid Asker or Announcer - Locality -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/local\ quest.png); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section6">
+            <p class="sub-text highlight" style="font-weight: 900; font-size: 40px;" id="local-personality"></p>
+            <h2 class="sub-text highlight bold" style="font-size: 30px; text-decoration-line: underline; text-decoration-style: wavy; line-height: 1.5; text-decoration-color: #ff2273;">In Locality</h2>
+            <div class="d-flex flex-column justify-content-center" style="background-image: url(./assets/dialog\ box.png); background-position: center; background-repeat: no-repeat; background-size: contain; width: 100vw; height: 18rem">
+                <h1 class="sub-text" id="local-subtitle-pre" style="color: #fabb17; margin-bottom: 0;"></h1>
+                <p class="sub-text" style="font-size: 60px; font-weight: 900; color: #ff2273; margin-bottom: 0;" id="local-count">0</p>
+                <h1 class="sub-text" id="local-subtitle-post" style="color: #fabb17; margin-bottom: 0;"></h1>
+            </div>
+            <h1 id="local-subtitle" class="sub-text mt-5 mx-3" style="color:#fabb17"></h1>
+        </section>
+
+        <!-- Avid as or Announcer - City -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/page_7.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section7">
+            <p class="sub-text highlight" style="font-weight: 900; font-size: 40px; text-decoration-line: underline; text-decoration-style: wavy; line-height: 1.5; text-decoration-color: #ff2273;" id="city-personality"></p>
+            <h2 class="sub-text highlight" style="font-size: 30px;">In your City</h2>
+            <div class="d-flex flex-column justify-content-center" style="background-image: url(./assets/number_bg.png); background-position: center; background-repeat: no-repeat; background-size: contain; width: 100vw; height: 18rem">
+                <h1 class="sub-text" id="city-subtitle-pre" style="color: #ff2273;"></h1>
+                <p class="sub-text" style="font-size: 60px; font-weight: 900; color: #000;" id="city-count">0</p>
+                <h1 class="sub-text" id="city-subtitle-post" style="color: #ff2273;"></h1>
+            </div>
+            <h1 class="sub-text" style="color:#000">Such a</h1>
+            <h1 class="sub-text bg-warning w-100" style="color:#000">Community Buzzmaker</h1>
+        </section>
+
+        <!-- Answers Provided -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/answers.gif); background-position: center; background-repeat: no-repeat; background-size: cover;" class="wrapper" id="section8">
+            <h1 class="welcome-text highlight" style="text-decoration: underline 2px #fabb17;">Hype Hero!</h1>
+            <div class="box">
+                <h1 class="welcome-text" style="font-size: 25px; width: fit-content; background-color: #ff2273; margin-bottom: 0;">That's Not All</h1>
+                <p class="welcome-text" style="font-size: 25px; width: fit-content; background-color: #0c1433; margin-bottom: 0;">You've given</p>
+                <div class="answer-box">
+                    <h1 class="welcome-text" id="answers" style="filter: drop-shadow(4px 4px #ff2873)">0</h1>
+                    <p class="bold" style="color: #fabb17; margin-bottom: 0;">ANSWERS</p>
+                </div>
+                <p class="bold p-3 mt-3" style="color: #fabb17; margin-bottom: 0; border-radius: 10px; background-color: #0c1433; border-top: 5px solid #ff2273;">You're a trailblazer, forging new paths</p>
+            </div>
+        </section>
+
+        <!-- Most Active Week -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/most_active_week.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section9">
+            <h1 class="welcome-text bold" style="font-size:40px;">Space-worthy Star</h1>
+            <h2 class="sub-text my-4" style="font-size:20px;">You went exploring the space from</h2>
+            <div class="sub-text text-light w-100" style="background-image: url(./assets/shake_rotate.gif); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 4rem; margin-bottom: 6rem;" id="active-week"></div>
+            <div class="mt-5">
+                <h3 class="welcome-text" id="activity-answers" style="font-size: 30px; color: #04294f;"></h3>
+                <h3 class="welcome-text" id="activity-local" style="font-size: 30px; color: #04294f;"></h3>
+                <h3 class="welcome-text" id="activity-city" style="font-size: 30px; color: #04294f;"></h3>
+            </div>
+        </section>
+
+        <!-- Referral Stats -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/referralBg.png); background-position: center; background-repeat: no-repeat; background-size: cover;" class="wrapper" id="section10">
+            <h1 class="welcome-text bold text-uppercase" id="referral-title" style="-webkit-text-stroke: 3px #f1f634; color: #ff2273;">Community Connection Master!</h1>
+            <h3 class="sub-text" style="color: #f1f634;">You've Referred</h3>
+            <h1 class="welcome-text" style="font-weight: 900; border: 2px solid #ff2273; padding: 2rem; box-shadow: 7px 6px; color: #ff2273; -webkit-text-stroke: 3px white;" id="referral-count"></h1>
+            <p class="sub-text" style="color: #f1f634;">Friends till now</p>
+            <p class="sub-text text-uppercase" style="font-size: 20px; border: 2px solid #ff2273;">You're not just a member of our community, you're a hype man!</p>
+        </section>
+
+        <!-- Summary -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(./assets/summary.png); background-repeat: no-repeat; background-size: cover; background-position: center; justify-content: start;" class="wrapper" id="section11">
+            <div class="top w-100 d-flex flex-row justify-content-between mt-4">
+                <img class="summary-img" alt="profile" height="20px" width="20px" id="profile-picture">
+                <h1 class="name text-capitalize text-center d-flex align-items-center highlight bold" id="name"></h1>
+                <img class="summary-img" src="./assets/512x512-01.png" alt="logo" height="20px" width="20px">
+            </div>
+            <div class="summary-data d-flex flex-row w-100 text-light text-center justify-content-evenly p-3 mt-4" style="border: 5px solid white; border-radius: 20px;">
+                <div class="w-100 left d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column">
+                        <p style="margin-bottom: 0;" class="summary-title text-warning" id="questions">0</p>
+                        <p style="margin-bottom: 0;" class="summary-subtitle">Questions</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p style="margin-bottom: 0;" class="summary-title text-warning" id="announcements">0</p>
+                        <p style="margin-bottom: 0;" class="summary-subtitle">Announcements</p>
+                    </div>
+                </div>
+                <div class="w-100 center d-flex flex-column justify-content-between" style="background-image: url(./assets/points.png); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                    <p style="margin-bottom: 0;" class="summary-text">Scored</p>
+                    <p style="margin-bottom: 0;" class="summary-title" id="profile-score">0</p>
+                    <p style="margin-bottom: 0;" class="summary-text">LocalEyes Points</p>
+                </div>
+                <div class="w-100 right d-flex flex-column justify-content-between">
+                    <div class="d-flex flex-column">
+                        <p style="margin-bottom: 0; color: #ff2273;" class="summary-title" id="answers-score">0</p>
+                        <p style="margin-bottom: 0;" class="summary-subtitle">Answers</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p style="margin-bottom: 0; color: #ff2273;" class="summary-title" id="streaks">0</p>
+                        <p style="margin-bottom: 0;" class="summary-subtitle">Streaks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-tag w-75 m-3 p-2">
+                <h2 class="bold text-uppercase text-center highlight m-0 mt-1" id="profile-tag"></h2>
+            </div>
+            <div class="profile-personality p-3">
+                <p class="bold text-uppercase text-center text-warning highlight m-0" id="profile-short"></p>
+            </div>
+            <div class="profile-personality-exp px-3 mt-1 mb-4">
+                <p class="text-center m-0 mt-1" id="profile-long"></p>
+            </div>
+            <div class="profile-personality p-3 w-75 text-center" style="border-radius: 20px;">
+                <p class="text-dark">We couldn't have navigated this year without your wisdom and guidance. You're a true community champion</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group">
+                <button type="button" class="btn btn-outline-light" id="referral-btn" style="z-index: 99999;" onclick="loadPage(2)">Restart</button>
+            </div>
+        </section>
+
+    </div>
+    <script type="module" src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>

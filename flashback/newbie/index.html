@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalEyes Flashback</title>
+    <link rel="icon" href="../assets/512x512-01.png" type="img/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body style="max-height: 100vh;">
+    <div class="d-flex flex-row">
+        <!-- Welcome Screen -->
+        <div id="back" onclick="goToPrevPage()"></div>
+        <div id="forward" onclick="goToNextPage()" class="bold"></div>
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(../assets/bg_p1_new.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section1">
+            <p class="welcome-text">Welcome to <span class="welcome-text bold">Local<span class="welcome-text bold highlight">Eyes</span></span> Flashback '22</p>
+        </section>
+
+        <!-- Introduction + Name -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(../assets/bg-names.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section2">
+            <img src="../assets/wrapped_text.png" alt="text" style="width: 100vw; z-index: 99;">
+            <p class="sub-text mx-4" style="font-weight: 700; font-size: 25px;">What's fun about 2022? Well, the Moments that we spent with you</p>
+            <h2 class="welcome-text text-capitalize" id="user-name" style="color: #62c9d5"></h2>
+        </section>
+
+        <!-- Time Since LocalEyes User -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(../assets/bg-rotate.gif); background-repeat: no-repeat; background-size: cover; background-position: center;" class="wrapper" id="section3">
+            <div class="m-3" style="background-color: #0c1433; border: 2px solid #62c9d5; border-radius: 20px;">
+                <p class="sub-text my-5" style="font-size: 20px;">Time flies when you're having fun</p>
+                <h2 class="sub-text my-5" style="color: orange; font-size: 17px;">You're a true community superstar. You've been with us for</h2>
+                <div class="d-flex flex-row justify-content-evenly text-light mb-5">
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-year">0</h2><span> Years</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-days">0</h2><span> Days</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-hours">0</h2><span> Hours</span></div>
+                    <div class="d-flex flex-row">
+                        <h2 class="ms-3 bold highlight" style="font-size: 30px;" id="date-mins">0</h2><span> Minutes</span></div>
+                </div>
+                <h2 class="welcome-text" style="font-size: 15px;">(PS. We Love You 💝)</h2>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section style="min-height: 100vh; min-width: 100vw; background-image: url(../assets/summary.png); background-repeat: no-repeat; background-size: cover; background-position: center; justify-content: start;" class="wrapper" id="section4">
+            <div class="top w-100 d-flex flex-row justify-content-between mt-4">
+                <img class="summary-img" alt="profile" height="20px" width="20px" id="profile-picture">
+                <h1 class="name text-capitalize text-center d-flex align-items-center highlight bold" id="name"></h1>
+                <img class="summary-img" src="../assets/512x512-01.png" alt="logo" height="20px" width="20px">
+            </div>
+            <div class="summary-data d-flex flex-row w-100 text-light text-center justify-content-evenly p-3 mt-4" style="border: 5px solid white; border-radius: 20px;">
+                <div class="center d-flex flex-column justify-content-between" style="background-image: url(../assets/points.png); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                    <p style="margin-bottom: 0;" class="summary-text">Scored</p>
+                    <p style="margin-bottom: 0;" class="summary-title my-5" id="profile-score">0</p>
+                    <p style="margin-bottom: 0;" class="summary-text">LocalEyes Points</p>
+                </div>
+            </div>
+            <div class="profile-tag w-75 m-3 p-3">
+                <p class="bold text-uppercase text-center highlight m-0 mt-1">Newbie</p>
+            </div>
+            <div class="profile-personality px-3">
+                <p class="bold text-uppercase text-center text-warning highlight m-0">N • E • R • R</p>
+            </div>
+            <div class="profile-personality-exp px-3 mt-1 mb-4">
+                <p class="text-capitalize text-center m-0 mt-1"><span class="bold">N</span>ewcomer • <span class="bold">E</span>xplorer • <span class="bold">R</span>ookie • <span class="bold">R</span>are Resident</p>
+            </div>
+            <div class="profile-personality text-center p-3 w-75" style="border-radius: 20px;">
+                <p class="text-dark">We want to thank you for being a part of our community and for supporting us. We hope you will continue to find value in LocalEyes create lifelong connections in your locality and city</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="Button group">
+                <button type="button" class="btn btn-outline-light" id="referral-btn" style="z-index: 99999;" onclick="loadPage(2)">Restart</button>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>

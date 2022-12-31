@@ -1,0 +1,131 @@
+* {
+    block-size: border-box;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+#forward {
+    background-color: transparent;
+    min-height: 100vh;
+    min-width: 70vw;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: #0c1433;
+}
+
+#back {
+    background-color: transparent;
+    min-height: 100vh;
+    min-width: 30vw;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #0c1433;
+}
+
+.share-btn {
+    background-color: rgba(12, 20, 51, 0.5);
+    border-radius: 20px;
+    box-shadow: 4px 6px #0c1433;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    z-index: 9;
+}
+
+.sub-text {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    z-index: 9;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.highlight {
+    color: #62c9d5;
+}
+
+.box {
+    background-image: url(./assets/box_small.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 50vh;
+}
+
+.answer-box {
+    background-color: #0c1433;
+    border-top: 13px solid #ff2873;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+.summary-img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.summary-title {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+}
+
+.profile-tag {
+    border: 5px solid #ff2873;
+    border-radius: 30px;
+    background-color: #0c1433;
+}
+
+.profile-personality {
+    background-color: #ff2873;
+    border-radius: 30px;
+}
+
+.profile-personality-exp {
+    background-color: #fabb13;
+    border-radius: 30px;
+    color: #1c1c1c;
+}
