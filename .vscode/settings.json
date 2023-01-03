@@ -1,4 +1,4 @@
 {
-    "editor.wordWrap": "on",
-    "liveServer.settings.port": 5501
+    "editor.wordWrap": "off",
+    "liveServer.settings.port": 5502
 }

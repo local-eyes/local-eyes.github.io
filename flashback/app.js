@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
 import { getFirestore, collection, getDocs, getDoc, setDoc, updateDoc, doc, query, where, connectFirestoreEmulator } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, connectAuthEmulator } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
 const firebaseConfig = {
     apiKey: "AIzaSyD2Q53YOsXBQBEqgqoayCReYYXhemTVCUI",
     authDomain: "localeyes-95d0d.firebaseapp.com",
@@ -9,7 +10,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 let currentPage = 1;
+let uid;
 let globalUserData;
 let isProgressDone = false;
 let totalAnswers;
@@ -17,9 +20,6 @@ let totalLocalQuestions;
 let totalLocalAnnouncements;
 let totalCityQuestions;
 let totalCityAnnouncements;
-
-// connectFirestoreEmulator(db, "localhost", 8080)
-// console.log("connected to emulator");
 
 
 // create a promise that returns user data referral data and user meta data about the user uid
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const params = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
     });
-    let uid = params.uid;
+    uid = params.uid;
     console.log("uid detected: " + uid);
     if (uid) {
         getUserData(uid).then((data) => {
@@ -98,6 +98,37 @@ document.addEventListener("DOMContentLoaded", function() {
                 sessionStorage.setItem("userData", JSON.stringify(data));
                 startLoading();
             }
+        });
+    } else {
+        // create a sign in with google button
+        const provider = new GoogleAuthProvider();
+        const signInBtn = document.createElement("button");
+        signInBtn.innerText = "Sign In with Google";
+        signInBtn.id = "signInBtn";
+        document.getElementById("preload-text").innerText = "Please Sign In to Continue";
+        document.getElementById("preload-text").appendChild(signInBtn);
+        signInBtn.addEventListener("click", () => {
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    uid = result.user.uid;
+                    getUserData(uid).then((data) => {
+                        // document.getElementById("spinner").remove();
+                        console.log("setting global user data");
+                        if (data.userData.createdOn.seconds > 1671148799) {
+                            console.info("Account Created After 15th December 2022");
+                            document.getElementById("preload-text").innerText = "Not Enough Data for this Account!"
+                            setTimeout(() => {
+                                sessionStorage.setItem('userImg', data.userData.imageURL);
+                                window.location.href = `/newbie/?name=${data.userData.fullname}&createdOn=${data.userData.createdOn.seconds}`;
+                            }, 1000)
+                        } else {
+                            console.info("Account Created Before 15th December 2022");
+                            globalUserData = data;
+                            sessionStorage.setItem("userData", JSON.stringify(data));
+                            startLoading();
+                        }
+                    });
+                })
         });
     }
 });
