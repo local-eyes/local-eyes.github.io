@@ -24,11 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+
             }
         });
     } else {
@@ -38,14 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+
             }
         });
     }
     // redirect to playstore
-    window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
 });
