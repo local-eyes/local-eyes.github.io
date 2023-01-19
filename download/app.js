@@ -5,6 +5,7 @@ const firebaseConfig = {
     authDomain: "localeyes-95d0d.firebaseapp.com",
     projectId: "localeyes-95d0d",
     appId: "1:847201898317:web:7a72d72afb4d81bcd53104",
+    databaseURL: "https://localeyes-95d0d-default-rtdb.firebaseio.com/",
 };
 
 const app = initializeApp(firebaseConfig);
