@@ -10,7 +10,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-connectDatabaseEmulator(db, "localhost", 9000);
+// connectDatabaseEmulator(db, "localhost", 9000);
 
 document.addEventListener("DOMContentLoaded", () => {
     // if query parameter 'source' is set, increase the counter for that source
