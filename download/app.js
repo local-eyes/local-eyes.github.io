@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     } else {
-        const sourceRef = ref(db, `downloads/qr`);
+        const sourceRef = ref(db, `downloads/other`);
         get(child(sourceRef, "count")).then((snapshot) => {
             if (snapshot.exists()) {
                 update(sourceRef, {
