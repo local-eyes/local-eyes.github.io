@@ -24,16 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
-                // open in new window
-                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
-//                 window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app&utm_source=" + source + "&utm_campaign=download"
 
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
-                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app&utm_source=" + source + "&utm_campaign=download"
 
             }
         });
@@ -44,14 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
-                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app&utm_source=download&utm_campaign=download"
 
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
-                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
+                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app&utm_source=download&utm_campaign=download"
 
             }
         });
