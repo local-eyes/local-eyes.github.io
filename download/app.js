@@ -24,14 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
-                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+                // open in new window
+                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
+//                 window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
 
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
-                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
 
             }
         });
@@ -42,14 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 update(sourceRef, {
                     count: snapshot.val() + 1,
                 });
-                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
 
                 console.log("updated");
             } else {
                 set(sourceRef, {
                     count: 1,
                 });
-                window.location.href = "https://play.google.com/store/apps/details?id=tech.dagurmittal.app";
+                window.open("https://play.google.com/store/apps/details?id=tech.dagurmittal.app", "_blank");
 
             }
         });
